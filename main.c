@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "Insert.txt"
+#include "structures.txt"
 int main()
 {
   struct pInfo p;
@@ -26,6 +26,8 @@ int main()
     scanf("%s", Password);
     if (strcmp(Username, User1) == 0 && strcmp(Password, Pass1) == 0  || strcmp(Username, User2) == 0 && strcmp(Password, Pass2) == 0) {
       puts("You entered succssesfully!");
+      puts("Please enter patients information:");
+      #include "Insert.txt"
     }
     else {
       puts("Username or Password was incorrect, please try again...");

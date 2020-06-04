@@ -1,0 +1,13 @@
+struct pInfo{
+  char fName[100];
+  char lName[100];
+  long long id;
+  long long pNumber;
+  long long fId;
+  char cause[100];
+  long long price;
+  char price_Date[100];
+  char nDate[100];
+  char Drug[100];
+  char dosage[100];
+};
