@@ -2,8 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "Insert.txt"
 int main()
 {
+  struct pInfo p;
   char Username[100];
   char Password[100];
   char User1[] = {"Admin1"}; char User2[] = {"Admin2"};
