@@ -6,8 +6,8 @@ int main()
 {
   char Username[100];
   char Password[100];
-  char U1[] = {"Admin1"}; char U2[] = {"Admin2"};
-  char P1[] = {"Abcd1234"}; char P2[] = {"Aqwe1"};
+  char User1[] = {"Admin1"}; char User2[] = {"Admin2"};
+  char Pass1[] = {"Abcd1234"}; char Pass2[] = {"Aqwe1"};
   int n;
   printf("Hi\nWelcome to Hospital system:)\n");
   printf("Please enter 1-4 key for below states:\n");
@@ -22,7 +22,7 @@ int main()
     scanf("%s", Username);
     printf("Password:");
     scanf("%s", Password);
-    if (strcmp(Username, U1) == 0 && strcmp(Password, P1) == 0  || strcmp(Username, U2) == 0 && strcmp(Password, P2) == 0) {
+    if (strcmp(Username, User1) == 0 && strcmp(Password, Pass1) == 0  || strcmp(Username, User2) == 0 && strcmp(Password, Pass2) == 0) {
       puts("You entered succssesfully!");
     }
     else {
