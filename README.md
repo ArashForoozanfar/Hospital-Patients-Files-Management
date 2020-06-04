@@ -1,2 +1,2 @@
 # Hospital-Patients-File
-My university project for C programming.
+My University Project for C Programming.

@@ -1,4 +1,4 @@
-printf("FisrtName:");
+printf("FirstName:");
 scanf("%s", p.fName);
 printf("LastName:");
 scanf("%s", p.lName);
