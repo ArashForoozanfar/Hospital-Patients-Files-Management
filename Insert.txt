@@ -10,6 +10,7 @@ fprintf(F, "ID: %lld\n", p.id);
 printf("PhoneNumber:");
 scanf("%lld", &p.pNumber);
 fprintf(F, "PhoneNumber: %lld\n", p.pNumber);
+srand(time(0));
 p.fId = rand();
 printf("FileNumber is %lld:\n", p.fId);
 fprintf(F, "FileNumber: %lld\n", p.fId);

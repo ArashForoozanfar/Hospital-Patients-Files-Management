@@ -1,23 +1,22 @@
-FirstName: Ali
-LastName: Mahdavi
-ID: 234567
-PhoneNumber: 9121234567
-FileNumber: 1804289383
-Reason for Reference: Corona
-Price: 50000
-Price Date: 5
-Prescription Date: 5
-Drugs: Aspirin
-Drug Dosage: 4ml
-osage: 4
 FirstName: Arash
 LastName: Foroozanfar
 ID: 24560898
 PhoneNumber: 9102283858
-FileNumber: 1804289383
+FileNumber: 984080470
 Reason for Reference: Flu
 Price: 50000
-Price Date: 5
-Prescription Date: 5
+Price Date: 5Jun
+Prescription Date: 5Jun
 Drugs: Antibiotics
-Drug Dosage: 4ml
+Drug Dosage: 4mg
+FirstName: Mobin
+LastName: Larijanian
+ID: 12345678
+PhoneNumber: 9121234567
+FileNumber: 1456517092
+Reason for Reference: Flu
+Price: 50000
+Price Date: 5Jun
+Prescription Date: 5Jun
+Drugs: Antibiotics
+Drug Dosage: 3mg
