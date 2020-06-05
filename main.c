@@ -6,7 +6,7 @@
 int main()
 {
   struct pInfo p;
-  FILE* F = fopen("PatientsInfo.txt", "r+");
+  FILE* F = fopen("PatientsInfo.txt", "a+");
   char Username[100];
   char Password[100];
   char User1[] = {"Admin1"}; char User2[] = {"Admin2"};
