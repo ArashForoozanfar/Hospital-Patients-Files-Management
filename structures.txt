@@ -11,3 +11,8 @@ struct pInfo{
   char Drug[100];
   char dosage[100];
 };
+struct Users{
+  char Name[100];
+  char userName[100];
+  char password[100];
+};

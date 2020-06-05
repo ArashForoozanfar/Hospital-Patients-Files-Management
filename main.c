@@ -6,8 +6,11 @@
 int main()
 {
   struct pInfo p;
+  struct Users ad;
   FILE* F = fopen("PatientsInfo.txt", "a+");
   FILE* P = fopen("Admins.txt", "a+");
+  fscanf(P, "%s", ad.userName);
+  fscanf(P, "%s", ad.password);
   char Username[100]; char adminName[100]; char adminPass[100];
   char Password[100]; char adminUser[100];
   char User1[] = {"Admin1"};
@@ -28,7 +31,7 @@ int main()
     scanf("%s", Password);
     if (strcmp(Username, User1) == 0 && strcmp(Password, Pass1) == 0) {
       puts("You entered succssesfully as Adminastrator!");
-      puts("Please select(1) to enter patients information    or   select(2) to add new admin");
+      puts("Please select(1) to enter patients information  or  select(2) to add new admin");
       scanf("%d", &m);
       if (m == 1) {
         #include "Insert.txt"
@@ -36,13 +39,13 @@ int main()
         puts("You want to add new admin so please enter:");
         printf("Admin Name: ");
         scanf("%s", adminName);
-        fprintf(P, "Admin Name: %s\n", adminName);
+        fprintf(P, "%s\n", adminName);
         printf("Username: ");
         scanf("%s", adminUser);
-        fprintf(P, "Admin Username: %s\n", adminUser);
+        fprintf(P, "%s\n", adminUser);
         printf("Password: ");
         scanf("%s", adminPass);
-        fprintf(P, "Admin Password: %s\n", adminPass);
+        fprintf(P, "%s\n", adminPass);
         puts("New Admin succssesfully added to system...");
         puts("Now select(1) to enter new information or (0) to Exit...");
         scanf("%d", &k);
@@ -52,6 +55,9 @@ int main()
           exit(0);
         }
       }
+    }
+    else if (strcmp(Username, ad.userName) == 0 && strcmp(Password, ad.password) == 0) {
+      puts("You entered to system succssesfully!");
     }
     else {
       puts("Username or Password was incorrect, please try again...");
