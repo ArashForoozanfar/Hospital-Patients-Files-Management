@@ -5,27 +5,30 @@
 #include "structures.txt"
 int main()
 {
+  int q, n, m, k, l;
   struct pInfo p;
   struct Users ad[10];
   FILE* F = fopen("PatientsInfo.txt", "a+");
   FILE* P = fopen("Admins.txt", "a+");
-  for (int i = 0; i < 10; i++) {
+  for (int i = 0; i < 10 && ad[i].Name != NULL; i++) {
     fscanf(P, "%s", ad[i].userName);
     fscanf(P, "%s", ad[i].password);
+    if (ad[i].Name == NULL) {
+        q = i;
+    }
   }
   char Username[100];
   char Password[100];
   char User1[] = {"Admin1"};
   char Pass1[] = {"Abcd1234"};
-  int n, m, k, l;
-  printf("Hi\nWelcome to Hospital system:)\n");
+  printf("Hello :D\nWelcome to Hospital system:)\n");
   printf("Please enter 1-4 key for below states:\n");
   printf("Insert(1)\nDelete(2)\nUpdate(3)\nSerach(4)\n");
   scanf("%d", &n);
 
   if (n == 1) {
     //Insert
-    puts("For adding new patients information you need to Login into system");
+    puts("For adding new patients information you need to Login to system");
     puts("please enter your Username and Password:");
     printf("Username:");
     scanf("%s", Username);
@@ -69,29 +72,19 @@ int main()
 
   if (n == 2) {
     //Delete
-    puts("To Delete patients information you need to Login into system");
-    puts("please enter your Username and Password:");
-    printf("Username:");
-    scanf("%s", Username);
-    printf("Password:");
-    scanf("%s", Password);
-    int i = 0;
-    while (i < 10) {
-      if (strcmp(Username, User1) == 0 && strcmp(Password, Pass1) == 0  ||  strcmp(Username, ad[i].userName) == 0 && strcmp(Password, ad[i].password) == 0) {
-        puts("You entered succssesfully!");
-        continue ;
-    }
-    else {
-      i++;
-    }
+    puts("To Delete patients information you need to Login to system");
+    #include "Login.txt"
   }
-}
 
   if (n == 3) {
     //Update
+    puts("To Update patients information you need to Login to system:");
+    #include "Login.txt"
   }
 
   if (n == 4) {
     //Serach
+    puts("To Search patients information you need to Login to system:");
+    #include "Login.txt"
   }
 }
