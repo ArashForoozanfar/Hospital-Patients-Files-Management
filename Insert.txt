@@ -32,3 +32,4 @@ fprintf(F, "Drugs: %s\n", p.Drug);
 printf("Drug Dosage:");
 scanf("%s", p.dosage);
 fprintf(F, "Drug Dosage: %s\n", p.dosage);
+fprintf(F, "\n");
