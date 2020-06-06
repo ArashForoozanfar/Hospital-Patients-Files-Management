@@ -6,11 +6,12 @@
 #include "structures.txt"
 int main()
 {
-  int n, m, k, l, q = 0, b = 0, cnt = 0;
-  struct pInfo p;
+  int n = 0, m = 0, k = 0, l = 0, q = 0, b = 0, cnt = 0, x = 0, d = 0, z = 0, w = 0;
+  struct pInfo p[100];
   struct Users ad[10];
   FILE* F = fopen("PatientsInfo.txt", "a+");
   FILE* P = fopen("Admins.txt", "a+");
+  FILE* S = fopen("NewPatients.txt", "a+");
   for (int i = 0; i < 10; i++) {
     if (ad[i].Name != NULL) {
       q = i;
@@ -20,13 +21,17 @@ int main()
     }
   }
   b = q - 4;
+  char search_fName[100];
+  char search_lName[100];
+  char search_ID[100];
+  char search_filenum[100];
   char Username[100];
   char Password[100];
   char User1[] = {"Admin1"};
   char Pass1[] = {"Abcd1234"};
   char delAdmin[100];
   printf("Hello :D\nWelcome to Hospital system:)\n");
-  printf("Please enter 1-4 key for below states:\n");
+  printf("Please enter 0-4 key for below states:\n");
   printf("Insert(1)\nDelete(2)\nUpdate(3)\nSerach(4)\nExit(0)\n");
   scanf("%d", &n);
 
@@ -67,14 +72,17 @@ int main()
         } else if (k == 0) {
           exit(0);
         }
-      } else if (m == 3) {
+        } else if (m == 3) {
         #include "Delete Admins.txt"
+      }
     }
-  }
     else {
         puts("Username or Password was incorrect, please try again...");
       }
     }
+
+
+
 
   if (n == 2) {
     //Delete
@@ -82,20 +90,32 @@ int main()
     #include "Login.txt"
     }
 
+
+
+
   if (n == 3) {
     //Update
     puts("To Update patients information you need to Login to system:");
     #include "Login.txt"
     }
 
+
+
+
   if (n == 4) {
     //Serach
     puts("To Search patients information you need to Login to system:");
     #include "Login.txt"
+    #include "Search.txt"
     }
+
+
+
 
   if (n == 0) {
     //exit
     exit (0);
   }
+
+
 }

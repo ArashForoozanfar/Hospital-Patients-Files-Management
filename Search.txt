@@ -1,0 +1,66 @@
+printf("Please enter the FirstName of patient you want to search:");
+scanf("%s", search_fName);
+  for (int i = 0; i < d; i++) {
+    fscanf(F, "%s", p[i].fName);
+    fscanf(F, "%s", p[i].lName);
+    fscanf(F, "%lld", &p[i].id);
+    fscanf(F, "%lld", &p[i].pNumber);
+    fscanf(F, "%lld", &p[i].fId);
+    fscanf(F, "%s", p[i].cause);
+    fscanf(F, "%lld", &p[i].price);
+    fscanf(F, "%s", p[i].price_Date);
+    fscanf(F, "%s", p[i].noDate);
+    fscanf(F, "%s", p[i].Drug);
+    fscanf(F, "%s", p[i].dosage);
+}
+while (i < d) {
+  if (strcmp(search_fName, p[i].fName) == 0) {
+    puts("Patients info found properly!");
+    break;
+    z = i;
+  }
+  else {
+    i++;
+  }
+}
+printf("Select(1) to show and transport information of patients to new file  or  Select(2) to just show it:");
+scanf("%d", &w);
+if (w == 1) {
+  printf("FirstName: %s\n", p[z].fName);
+  fprintf(S, "FirstName: %s\n", p[z].fName);
+  printf("LastName: %s\n", p[z].lName);
+  fprintf(S, "LastName: %s\n", p[z].lName);
+  printf("ID: %lld\n", p[z].id);
+  fprintf(S, "ID: %lld\n", p[z].id);
+  printf("PhoneNumber: %lld\n", p[z].pNumber);
+  fprintf(S, "PhoneNumber: %lld\n", p[z].pNumber);
+  printf("FileNumber is %lld\n", p[z].fId);
+  fprintf(S, "FileNumber: %lld\n", p[z].fId);
+  printf("Reason for Reference: %s\n", p[z].cause);
+  fprintf(S, "Reason for Reference: %s\n", p[z].cause);
+  printf("Price: %lld\n", p[z].price);
+  fprintf(S, "Price: %lld\n", p[z].price);
+  printf("Price Date: %s\n", p[z].price_Date);
+  fprintf(S, "Price Date: %s\n", p[z].price_Date);
+  printf("Prescription Date: %s\n", p[z].noDate);
+  fprintf(S, "Prescription Date: %s\n", p[z].noDate);
+  printf("Drug: %s\n", p[z].Drug);
+  fprintf(S, "Drugs: %s\n", p[z].Drug);
+  printf("Dosage: %s\n", p[z].dosage);
+  fprintf(S, "Drug Dosage: %s\n", p[z].dosage);
+  fprintf(F, "\n");
+}
+else if (w == 2) {
+  printf("FirstName: %s\n", p[z].fName);
+  printf("LastName: %s\n", p[z].lName);
+  printf("ID: %lld\n", p[z].id);
+  printf("PhoneNumber: %lld\n", p[z].pNumber);
+  printf("FileNumber is %lld\n", p[z].fId);
+  printf("Reason for Reference: %s\n", p[z].cause);
+  printf("Price: %lld\n", p[z].price);
+  printf("Price Date: %s\n", p[z].price_Date);
+  printf("Prescription Date: %s\n", p[z].noDate);
+  printf("Drug: %s\n", p[z].Drug);
+  printf("Dosage: %s\n", p[z].dosage);
+  fprintf(F, "\n");
+}
