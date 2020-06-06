@@ -16,8 +16,8 @@ scanf("%s", search_fName);
 while (i < d) {
   if (strcmp(search_fName, p[i].fName) == 0) {
     puts("Patients info found properly!");
-    break;
     z = i;
+    break;
   }
   else {
     i++;
