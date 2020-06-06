@@ -1,0 +1,12 @@
+puts("You want to delete Admin specifications");
+printf("Write the Name of Admin you want to delete:");
+scanf("%s", delAdmin);
+for (int i = 0; i < b; i++) {
+  if (strcmp(delAdmin, ad[i].Name) == 0) {
+    for (int j = 0; ad[i].Name[j] != '\0'; j++) {
+      ad[i].Name[j] = '\0';
+      ad[i].userName[j] = '\0';
+      ad[i].password[j] = '\0';
+    }
+  }
+}

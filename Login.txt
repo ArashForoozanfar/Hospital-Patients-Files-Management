@@ -4,11 +4,11 @@ scanf("%s", Username);
 printf("Password:");
 scanf("%s", Password);
 int i = 0;
-while (i < q) {
+while (i < b) {
   if (strcmp(Username, User1) == 0 && strcmp(Password, Pass1) == 0  ||  strcmp(Username, ad[i].userName) == 0 && strcmp(Password, ad[i].password) == 0) {
-    puts("You entered succssesfully!");
-    continue ;
-}
+      printf("You entered succssesfully!\n");
+      break;
+  }
   else {
     i++;
   }
