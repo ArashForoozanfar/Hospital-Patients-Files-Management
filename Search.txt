@@ -1,4 +1,4 @@
-puts("Select(1) to Search by FirstName");
+puts("Select(1) to search by FirstName");
 puts("Select(2) to search by LastName");
 puts("Select(3) to search by ID");
 puts("Select(4) to search by FileNumber");
