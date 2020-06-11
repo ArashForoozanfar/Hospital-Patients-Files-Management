@@ -3,13 +3,19 @@ printf("Write the Name of Admin you want to delete:");
 scanf("%s", delAdmin);
 for (int i = 0; i < b; i++) {
   if (strcmp(delAdmin, ad[i].Name) == 0) {
-  int j = 100;
+  int j = 20;
     while(j != -1) {
       ad[i].Name[j] = '\0';
       ad[i].userName[j] = '\0';
       ad[i].password[j] = '\0';
       j--;
     }
+    char S1[100] = {0};
+    char S2[100] = {0};
+    char S3[100] = {0};
+    fprintf(P, "%s", strcpy(ad[i].Name, S1));
+    fprintf(P, "%s", strcpy(ad[i].userName, S2));
+    fprintf(P, "%s", strcpy(ad[i].password, S3));
     puts("information had succssesfully deleted");
     break;
   }
