@@ -33,7 +33,3 @@ Price Date: 7Jun
 Prescription Date: 7Jun
 Drugs: ---
 Drug Dosage: ---
-
-
-
-

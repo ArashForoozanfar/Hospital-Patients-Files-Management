@@ -1,26 +1,74 @@
-printf("Please enter the FirstName of patient you want to search:");
-scanf("%s", search_fName);
-  for (int i = 0; i < d; i++) {
-    fscanf(F, "%s", p[i].fName);
-    fscanf(F, "%s", p[i].lName);
-    fscanf(F, "%lld", &p[i].id);
-    fscanf(F, "%lld", &p[i].pNumber);
-    fscanf(F, "%lld", &p[i].fId);
-    fscanf(F, "%s", p[i].cause);
-    fscanf(F, "%lld", &p[i].price);
-    fscanf(F, "%s", p[i].price_Date);
-    fscanf(F, "%s", p[i].noDate);
-    fscanf(F, "%s", p[i].Drug);
-    fscanf(F, "%s", p[i].dosage);
+puts("Select(1) to Search by FirstName");
+puts("Select(2) to search by LastName");
+puts("Select(3) to search by ID");
+puts("Select(4) to search by FileNumber");
+scanf("%d", &e);
+if (e == 1) {
+  printf("Please enter the FirstName of patient you want to search:");
+  scanf("%s", search_fName);
+    for (int i = 0; i < d; i++) {
+      fscanf(F, "%s", p[i].fName);
+    }
+  while (i < d) {
+    if (strcmp(search_fName, p[i].fName) == 0) {
+      puts("Patients info found properly!");
+      z = i;
+      break;
+  }
+    else {
+      i++;
+    }
+  }
 }
-while (i < d) {
-  if (strcmp(search_fName, p[i].fName) == 0) {
+if (e == 2) {
+  printf("Please enter the LastName of patient you want to search:");
+  scanf("%s", search_lName);
+    for (int i = 0; i < d; i++) {
+      fscanf(F, "%s", p[i].lName);
+    }
+    while (i < d) {
+    if (strcmp(search_lName, p[i].lName) == 0) {
+      puts("Patients info found properly!");
+      z = i;
+      break;
+    }
+      else {
+      i++;
+    }
+  }
+}
+if (e == 3) {
+  printf("Please enter the ID of patient you want to search:");
+  scanf("%lld", search_ID);
+    for (int i = 0; i < d; i++) {
+      fscanf(F, "%lld", &p[i].id);
+      }
+      while (i < d) {
+      if (search_ID == p[i].id) {
+      puts("Patients info found properly!");
+      z = i;
+      break;
+    }
+      else {
+      i++;
+    }
+  }
+}
+if (e == 4) {
+printf("Please enter the FileNumber of patient you want to search:");
+scanf("%lld", search_filenum);
+  for (int i = 0; i < d; i++) {
+    fscanf(F, "%lld", &p[i].fId);
+    }
+    while (i < d) {
+    if (search_filenum == p[i].fId) {
     puts("Patients info found properly!");
     z = i;
     break;
   }
-  else {
-    i++;
+    else {
+      i++;
+    }
   }
 }
 printf("Select(1) to show and transport information of patients to new file  or  Select(2) to just show it:");

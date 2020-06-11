@@ -6,7 +6,7 @@
 #include "structures.txt"
 int main()
 {
-  int n = 0, m = 0, k = 0, l = 0, q = 0, b = 0, cnt = 0, x = 0, d = 0, z = 0, w = 0;
+  int n = 0, m = 0, k = 0, l = 0, q = 0, b = 0, cnt = 0, x = 0, d = 0, z = 0, w = 0, e = 0;
   struct pInfo p[100];
   struct Users ad[10];
   FILE* F = fopen("PatientsInfo.txt", "a+");
@@ -23,8 +23,8 @@ int main()
   b = q - 4;
   char search_fName[100];
   char search_lName[100];
-  char search_ID[100];
-  char search_filenum[100];
+  long long search_ID[100];
+  long long search_filenum[100];
   char Username[100];
   char Password[100];
   char User1[] = {"Admin1"};
@@ -37,7 +37,7 @@ int main()
 
   if (n == 1) {
     //Insert
-    puts("For adding new patients information you need to Login to system");
+    puts("For adding new information you need to Login to system");
     puts("please enter your Username and Password:");
     printf("Username:");
     scanf("%s", Username);
@@ -45,7 +45,7 @@ int main()
     scanf("%s", Password);
     if (strcmp(Username, User1) == 0 && strcmp(Password, Pass1) == 0) {
       puts("You entered succssesfully as Adminastrator!");
-      puts("Please select(1) to enter patients information  or  select(2) to add new admin  or  select(3) to remove admin");
+      printf("Please select(1) to enter patients information  or  select(2) to add new admin  or  select(3) to remove admin:");
       scanf("%d", &m);
       if (m == 1) {
         #include "Insert.txt"
@@ -64,8 +64,8 @@ int main()
           scanf("%s", ad[i].password);
           fprintf(P, "%s\n", ad[i].password);
         }
-        puts("New Admins succssesfully added to system...");
-        puts("Now select(1) to enter new information or (0) to Exit...");
+        puts("New Admins succssesfully added to system ...");
+        puts("Now select(1) to enter new information or (0) to Exit ...");
         scanf("%d", &k);
         if (k == 1) {
           #include "Insert.txt"
