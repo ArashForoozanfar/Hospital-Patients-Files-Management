@@ -15,9 +15,9 @@ int main()
   for (int i = 0; i < 10; i++) {
     if (ad[i].Name != NULL) {
       q = i;
-      fscanf(P, "%s", ad[q].Name);
-      fscanf(P, "%s", ad[q].userName);
-      fscanf(P, "%s", ad[q].password);
+      fscanf(P, "%s", ad[i].Name);
+      fscanf(P, "%s", ad[i].userName);
+      fscanf(P, "%s", ad[i].password);
     }
   }
   b = q - 4;
