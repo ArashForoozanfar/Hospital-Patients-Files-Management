@@ -39,7 +39,7 @@ if (e == 2) {
 }
 if (e == 3) {
   printf("Please enter the ID of patient you want to search:");
-  scanf("%lld", search_ID);
+  scanf("%lld", &search_ID);
     for (int i = 0; i < d; i++) {
       fscanf(F, "%lld", &p[i].id);
       }
@@ -56,7 +56,7 @@ if (e == 3) {
 }
 if (e == 4) {
 printf("Please enter the FileNumber of patient you want to search:");
-scanf("%lld", search_filenum);
+scanf("%lld", &search_filenum);
   for (int i = 0; i < d; i++) {
     fscanf(F, "%lld", &p[i].fId);
     }

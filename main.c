@@ -23,8 +23,8 @@ int main()
   b = q - 4;
   char search_fName[100];
   char search_lName[100];
-  long long search_ID[100];
-  long long search_filenum[100];
+  long long search_ID;
+  long long search_filenum;
   char Username[100];
   char Password[100];
   char User1[] = {"Admin1"};
