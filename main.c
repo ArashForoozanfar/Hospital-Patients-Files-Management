@@ -43,7 +43,7 @@ int main()
   char delAdmin[100];
   printf("Hello :D\nWelcome to Hospital system:)\n");
   printf("Please enter 0-4 key for below states:\n");
-  printf("Insert(1)\nDelete(2)\nUpdate(3)\nSerach(4)\nExit(0)\n");
+  printf("Insert(1)\nSearch, Delete and Update(2)\nExit(0)\n");
   scanf("%d", &n);
 
   if (n == 1) {
@@ -96,25 +96,6 @@ int main()
 
 
   if (n == 2) {
-    //Delete
-    puts("To Delete patients information you need to Login to system");
-    #include "Login.txt"
-    #include "Delete.txt"
-    }
-
-
-
-
-  if (n == 3) {
-    //Update
-    puts("To Update patients information you need to Login to system:");
-    #include "Login.txt"
-    }
-
-
-
-
-  if (n == 4) {
     //Serach
     puts("To Search patients information you need to Login to system:");
     #include "Login.txt"
