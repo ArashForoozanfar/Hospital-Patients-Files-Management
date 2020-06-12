@@ -50,7 +50,7 @@ if (c == 6) {
 if (c == 7) {
   puts("Please write the new Price");
   scanf("%lld", &new_price);
-  p[z].price = new_price;
+  p[z].price += new_price;
   fprintf(F, "%lld", p[z].price);
 }
 if (c == 8) {
