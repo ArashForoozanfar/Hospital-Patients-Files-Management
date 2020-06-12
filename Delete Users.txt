@@ -1,5 +1,5 @@
-puts("You want to delete Admin specifications");
-printf("Write the Name of Admin you want to delete:");
+puts("You want to delete User specifications");
+printf("Write the Name of User you want to delete:");
 scanf("%s", delAdmin);
 for (int i = 0; i < b; i++) {
   if (strcmp(delAdmin, ad[i].Name) == 0) {
@@ -15,5 +15,5 @@ for (int i = 0; i < b; i++) {
     puts("information has succssesfully deleted");
     break;
   }
-  puts("Admin information didnt found :(");
+  puts("User information didnt found :(");
 }

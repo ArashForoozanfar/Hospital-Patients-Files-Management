@@ -34,3 +34,15 @@ Prescription Date: Fri Jun 12 22:29:18 2020
 Drugs: Gelofen
 Drug Dosage: 8/Week
 
+FirstName: Navid
+LastName: Kianfar
+ID: 46542879
+PhoneNumber: 9124593927
+FileNumber: 507903250
+Reason for Reference: Corona
+Price: 200000
+Price Date: Fri Jun 12 22:44:06 2020
+Prescription Date: Fri Jun 12 22:44:06 2020
+Drugs: ---
+Drug Dosage: ---
+

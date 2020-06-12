@@ -11,7 +11,7 @@ int main()
   struct pInfo p[100];
   struct Users ad[10];
   FILE* F = fopen("PatientsInfo.txt", "a+");
-  FILE* P = fopen("Admins.txt", "a+");
+  FILE* P = fopen("Users.txt", "a+");
   FILE* S = fopen("NewPatients.txt", "a+");
   FILE* D = fopen("Prescriptions.txt", "a+");
   for (int i = 0; i < 10; i++) {
@@ -41,7 +41,7 @@ int main()
   char new_Drug[100];
   char new_Dosage[100];
   char User1[] = {"Admin1"};
-  char Pass1[] = {"Abcd1234"};
+  char Pass1[] = {"Arash1234"};
   char delAdmin[100];
   printf("Hello :D\nWelcome to Hospital system:)\n");
   printf("Please enter 0-2 key for below states:\n");
@@ -58,16 +58,16 @@ int main()
     scanf("%s", Password);
     if (strcmp(Username, User1) == 0 && strcmp(Password, Pass1) == 0) {
       puts("You entered succssesfully as Adminastrator!");
-      printf("Please select(1) to enter patients information  or  select(2) to add new admin  or  select(3) to remove admin:");
+      printf("Please select(1) to enter patients information  or  select(2) to add new Users  or  select(3) to remove a User:");
       scanf("%d", &m);
       if (m == 1) {
         #include "Insert.txt"
       } else if (m == 2) {
-        puts("please select which number of Admins you want to add:");
+        puts("please select which number of Users you want to add:");
         scanf("%d", &l);
-        printf("You want to add %d new Admins so please enter:\n", l);
+        printf("You want to add %d new Users so please enter:\n", l);
         for (int i = 0; i < l; i++) {
-          printf("Admin Name: ");
+          printf("User FirstName and LastName: ");
           scanf("%s", ad[i].Name);
           fprintf(P, "%s\n", ad[i].Name);
           printf("Username: ");
@@ -77,7 +77,7 @@ int main()
           scanf("%s", ad[i].password);
           fprintf(P, "%s\n", ad[i].password);
         }
-        puts("New Admins succssesfully added to system ...");
+        puts("New Users succssesfully added to system ...");
         puts("Now select(1) to enter new information or (0) to Exit ...");
         scanf("%d", &k);
         if (k == 1) {
@@ -86,7 +86,7 @@ int main()
           exit(0);
         }
         } else if (m == 3) {
-        #include "Delete Admins.txt"
+        #include "Delete Users.txt"
       }
     }
     else {
