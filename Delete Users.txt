@@ -1,8 +1,8 @@
 puts("You want to delete User specifications");
 printf("Write the Name of User you want to delete:");
-scanf("%s", delAdmin);
+scanf("%s", delUser);
 for (int i = 0; i < b; i++) {
-  if (strcmp(delAdmin, ad[i].Name) == 0) {
+  if (strcmp(delUser, ad[i].Name) == 0) {
     char S1[100] = {0};
     char S2[100] = {0};
     char S3[100] = {0};

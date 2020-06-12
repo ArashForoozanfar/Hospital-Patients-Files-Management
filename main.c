@@ -42,7 +42,7 @@ int main()
   char new_Dosage[100];
   char User1[] = {"Admin1"};
   char Pass1[] = {"Arash1234"};
-  char delAdmin[100];
+  char delUser[100];
   printf("Hello :D\nWelcome to Hospital system:)\n");
   printf("Please enter 0-2 key for below states:\n");
   printf("Insert(1)\nSearch, Delete and Update(2)\nExit(0)\n");
