@@ -13,6 +13,7 @@ int main()
   FILE* F = fopen("PatientsInfo.txt", "a+");
   FILE* P = fopen("Admins.txt", "a+");
   FILE* S = fopen("NewPatients.txt", "a+");
+  FILE* D = fopen("Prescriptions.txt", "a+");
   for (int i = 0; i < 10; i++) {
     if (ad[i].Name != NULL) {
       q = i;
@@ -43,7 +44,7 @@ int main()
   char Pass1[] = {"Abcd1234"};
   char delAdmin[100];
   printf("Hello :D\nWelcome to Hospital system:)\n");
-  printf("Please enter 0-4 key for below states:\n");
+  printf("Please enter 0-2 key for below states:\n");
   printf("Insert(1)\nSearch, Delete and Update(2)\nExit(0)\n");
   scanf("%d", &n);
 
@@ -97,7 +98,7 @@ int main()
 
 
   if (n == 2) {
-    //Serach
+    //Serach, Update and Delete
     puts("To Search patients information you need to Login to system:");
     #include "Login.txt"
     #include "Search.txt"

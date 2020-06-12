@@ -5,9 +5,11 @@ for (int i = 0; i < x; i++) {
   printf("FirstName:");
   scanf("%s", p[i].fName);
   fprintf(F, "FirstName: %s\n", p[i].fName);
+  fprintf(D, "FirstName: %s\n", p[i].fName);
   printf("LastName:");
   scanf("%s", p[i].lName);
   fprintf(F, "LastName: %s\n", p[i].lName);
+  fprintf(D, "LastName: %s\n", p[i].lName);
   printf("ID:");
   scanf("%lld", &p[i].id);
   fprintf(F, "ID: %lld\n", p[i].id);
@@ -34,12 +36,16 @@ for (int i = 0; i < x; i++) {
   *p[i].noDate1 = ctime(&cur_time);
   printf("Prescription Date is %s", *p[i].noDate1);
   fprintf(F, "Prescription Date: %s", *p[i].noDate1);
+  fprintf(D, "Prescription Date: %s", *p[i].noDate1);
   printf("Drugs:");
   scanf("%s", p[i].Drug);
   fprintf(F, "Drugs: %s\n", p[i].Drug);
+  fprintf(D, "Drugs: %s\n", p[i].Drug);
   printf("Drug Dosage:");
   scanf("%s", p[i].dosage);
   fprintf(F, "Drug Dosage: %s\n", p[i].dosage);
+  fprintf(D, "Drug Dosage: %s\n", p[i].dosage);
   fprintf(F, "\n");
+  fprintf(D, "\n");
 }
 d += x;

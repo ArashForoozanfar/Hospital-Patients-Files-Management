@@ -1,0 +1,18 @@
+FirstName: Arash
+LastName: Foroozanfar
+Prescription Date: Fri Jun 12 22:27:17 2020
+Drugs: Antibiotics
+Drug Dosage: 4mg/Day
+
+FirstName: Mobin
+LastName: Larijanian
+Prescription Date: Fri Jun 12 22:28:22 2020
+Drugs: Advil
+Drug Dosage: 2Tab/Day
+
+FirstName: Behzad
+LastName: Foroozanfar
+Prescription Date: Fri Jun 12 22:29:18 2020
+Drugs: Gelofen
+Drug Dosage: 8/Week
+
