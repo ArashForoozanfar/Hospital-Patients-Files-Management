@@ -1,0 +1,27 @@
+int j = 100;
+while(j != -1) {
+  p[z].fName[j] = '\0';
+  p[z].lName[j] = '\0';
+  p[z].cause[j] = '\0';
+  p[z].price_Date[j] = '\0';
+  p[z].noDate[j] = '\0';
+  p[z].Drug[j] = '\0';
+  p[z].dosage[j] = '\0';
+}
+p[z].id = 0;
+p[z].pNumber = 0;
+p[z].fId = 0;
+p[z].price = 0;
+fprintf(S, "FirstName: %s\n", p[z].fName);
+fprintf(S, "LastName: %s\n", p[z].lName);
+fprintf(S, "ID: %lld\n", p[z].id);
+fprintf(S, "PhoneNumber: %lld\n", p[z].pNumber);
+fprintf(S, "FileNumber: %lld\n", p[z].fId);
+fprintf(S, "Reason for Reference: %s\n", p[z].cause);
+fprintf(S, "Price: %lld\n", p[z].price);
+fprintf(S, "Price Date: %s\n", p[z].price_Date);
+fprintf(S, "Prescription Date: %s\n", p[z].noDate);
+fprintf(S, "Drugs: %s\n", p[z].Drug);
+fprintf(S, "Drug Dosage: %s\n", p[z].dosage);
+fprintf(S, "\n");
+puts("patient information succssesfully deleted");

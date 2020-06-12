@@ -1,0 +1,19 @@
+puts("Select(1) to update FirstName");
+puts("Select(2) to update LastName");
+puts("Select(3) to update ID");
+puts("Select(4) to update PhoneNumber");
+puts("Select(5) to update FileNumber");
+puts("Select(6) to update Reason for Reference");
+puts("Select(7) to update Price");
+puts("Select(8) to update Price Date");
+puts("Select(9) to update Prescription Date");
+puts("Select(10) to update Drugs");
+puts("Select(11) to update Dosage");
+printf("Enter a number:");
+scanf("%d", &c);
+if (c == 1) {
+  puts("Please write the New FirstName");
+  scanf("%s", new_fName);
+  strcpy(p[z].fName, new_fName);
+  fprintf(F, "%s", p[z].fName);
+}

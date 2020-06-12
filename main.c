@@ -6,7 +6,7 @@
 #include "structures.txt"
 int main()
 {
-  int n = 0, m = 0, k = 0, l = 0, q = 0, b = 0, cnt = 0, x = 0, d = 0, z = 0, w = 0, e = 0;
+  int n = 0, m = 0, k = 0, l = 0, q = 0, b = 0, cnt = 0, x = 0, d = 0, z = 0, w = 0, e = 0, r = 0, c = 0;
   struct pInfo p[100];
   struct Users ad[10];
   FILE* F = fopen("PatientsInfo.txt", "a+");
@@ -27,6 +27,17 @@ int main()
   long long search_filenum;
   char Username[100];
   char Password[100];
+  char new_fName[100];
+  char new_lName[100];
+  long long new_id;
+  long long new_pNumber;
+  long long new_fId;
+  char new_cause[100];
+  long long new_price;
+  char new_price_Date[100];
+  char new_noDate[100];
+  char new_Drug[100];
+  char new_Dosage[100];
   char User1[] = {"Admin1"};
   char Pass1[] = {"Abcd1234"};
   char delAdmin[100];
@@ -88,6 +99,7 @@ int main()
     //Delete
     puts("To Delete patients information you need to Login to system");
     #include "Login.txt"
+    #include "Delete.txt"
     }
 
 
