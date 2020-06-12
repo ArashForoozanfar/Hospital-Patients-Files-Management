@@ -7,7 +7,9 @@ struct pInfo{
   char cause[100];
   long long price;
   char price_Date[100];
+  char* price_Date1[100];
   char noDate[100];
+  char* noDate1[100];
   char Drug[100];
   char dosage[100];
 };

@@ -6,6 +6,7 @@
 #include "structures.txt"
 int main()
 {
+  time_t cur_time;
   int n = 0, m = 0, k = 0, l = 0, q = 0, b = 0, cnt = 0, x = 0, d = 0, z = 0, w = 0, e = 0, r = 0, c = 0;
   struct pInfo p[100];
   struct Users ad[10];
@@ -34,8 +35,8 @@ int main()
   long long new_fId;
   char new_cause[100];
   long long new_price;
-  char new_price_Date[100];
-  char new_noDate[100];
+  char* new_price_Date[100];
+  char* new_noDate[100];
   char new_Drug[100];
   char new_Dosage[100];
   char User1[] = {"Admin1"};
