@@ -91,7 +91,7 @@ int main()
                   }
     }
     else {
-        puts("Username or Password was incorrect, please try again...");
+        puts("Username or Password was incorrect, please try again ...");
       }
     }
 

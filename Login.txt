@@ -4,10 +4,14 @@ scanf("%s", Username);
 printf("Password:");
 scanf("%s", Password);
 int i = 0;
-while (i < b) {
+while (i <= b) {
   if (strcmp(Username, User1) == 0 && strcmp(Password, Pass1) == 0  ||  strcmp(Username, ad[i].userName) == 0 && strcmp(Password, ad[i].password) == 0) {
       printf("You entered succssesfully!\n");
       break;
+  }
+  if (i == b) {
+    puts("Username or Password was incorrect please try again ...");
+    exit(0);
   }
   else {
     i++;
