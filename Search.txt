@@ -29,9 +29,8 @@ printf("Dosage: %s\n", p[i].dosage);
 scanf("%d", &e);
 if (e == 1) {
   printf("Please enter the FirstName of patient you want to search:");
-  printf("d = %d\n", d);
   scanf("%s", search_fName);
-    for (int i = 0; i < d; i++) {
+    for (int i = 0; p[i].fName != NULL; i++) {
       fscanf(F, "%s", p[i].fName);
       fscanf(F, "%s", p[i].lName);
       fscanf(F, "%lld", &p[i].id);
@@ -43,22 +42,17 @@ if (e == 1) {
       fscanf(F, "%s", p[i].noDate);
       fscanf(F, "%s", p[i].Drug);
       fscanf(F, "%s", p[i].dosage);
-    }
-  while (i < d) {
-    if (strcmp(search_fName, p[i].fName) == 0) {
-      puts("Patients info found properly!");
-      z = i;
-      break;
-  }
-    else {
-      i++;
+      if (strcmp(search_fName, p[i].fName) == 0) {
+        puts("Patients info found properly!");
+        z = i;
+        break;
+      }
     }
   }
-}
 if (e == 2) {
   printf("Please enter the LastName of patient you want to search:");
   scanf("%s", search_lName);
-    for (int i = 0; i < d; i++) {
+    for (int i = 0; p[i].fName != NULL; i++) {
       fscanf(F, "%s", p[i].fName);
       fscanf(F, "%s", p[i].lName);
       fscanf(F, "%lld", &p[i].id);
@@ -70,22 +64,17 @@ if (e == 2) {
       fscanf(F, "%s", p[i].noDate);
       fscanf(F, "%s", p[i].Drug);
       fscanf(F, "%s", p[i].dosage);
-    }
-    while (i < d) {
-    if (strcmp(search_lName, p[i].lName) == 0) {
-      puts("Patients info found properly!");
-      z = i;
-      break;
-    }
-      else {
-      i++;
+      if (strcmp(search_lName, p[i].lName) == 0) {
+        puts("Patients info found properly!");
+        z = i;
+        break;
+      }
     }
   }
-}
 if (e == 3) {
   printf("Please enter the ID of patient you want to search:");
   scanf("%lld", &search_ID);
-    for (int i = 0; i < d; i++) {
+    for (int i = 0; p[i].fName != NULL; i++) {
       fscanf(F, "%s", p[i].fName);
       fscanf(F, "%s", p[i].lName);
       fscanf(F, "%lld", &p[i].id);
@@ -97,22 +86,17 @@ if (e == 3) {
       fscanf(F, "%s", p[i].noDate);
       fscanf(F, "%s", p[i].Drug);
       fscanf(F, "%s", p[i].dosage);
-      }
-      while (i < d) {
       if (search_ID == p[i].id) {
-      puts("Patients info found properly!");
-      z = i;
-      break;
-    }
-      else {
-      i++;
+        puts("Patients info found properly!");
+        z = i;
+        break;
+      }
     }
   }
-}
 if (e == 4) {
 printf("Please enter the FileNumber of patient you want to search:");
 scanf("%lld", &search_filenum);
-  for (int i = 0; i < d; i++) {
+  for (int i = 0; p[i].fName != NULL; i++) {
     fscanf(F, "%s", p[i].fName);
     fscanf(F, "%s", p[i].lName);
     fscanf(F, "%lld", &p[i].id);
@@ -124,15 +108,10 @@ scanf("%lld", &search_filenum);
     fscanf(F, "%s", p[i].noDate);
     fscanf(F, "%s", p[i].Drug);
     fscanf(F, "%s", p[i].dosage);
-    }
-    while (i < d) {
     if (search_filenum == p[i].fId) {
-    puts("Patients info found properly!");
-    z = i;
-    break;
-  }
-    else {
-      i++;
+      puts("Patients info found properly!");
+      z = i;
+      break;
     }
   }
 }
