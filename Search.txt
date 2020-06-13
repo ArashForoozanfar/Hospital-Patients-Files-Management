@@ -29,6 +29,7 @@ printf("Dosage: %s\n", p[i].dosage);
 scanf("%d", &e);
 if (e == 1) {
   printf("Please enter the FirstName of patient you want to search:");
+  printf("d = %d\n", d);
   scanf("%s", search_fName);
     for (int i = 0; i < d; i++) {
       fscanf(F, "%s", p[i].fName);

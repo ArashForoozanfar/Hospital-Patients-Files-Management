@@ -1,5 +1,7 @@
 puts("Please enter which number of patients do you want to add:");
 scanf("%d", &x);
+d += x;
+printf("d: %d", d);
 printf("So you want to add %d patients information\n", x);
 for (int i = 0; i < x; i++) {
   printf("FirstName:");
@@ -28,11 +30,9 @@ for (int i = 0; i < x; i++) {
   fprintf(F, "%lld\n", p[i].price);
   printf("Price Date:");
   scanf("%s", p[i].price_Date);
-  printf("Price Date: %s\n", p[i].price_Date);
   fprintf(F, "%s\n", p[i].price_Date);
   printf("Prescription Date:");
   scanf("%s", p[i].noDate);
-  printf("Prescription Date: %s\n", p[i].noDate);
   fprintf(F, "%s\n", p[i].noDate);
   fprintf(D, "%s\n", p[i].noDate);
   printf("Drugs:");
@@ -43,5 +43,6 @@ for (int i = 0; i < x; i++) {
   scanf("%s", p[i].dosage);
   fprintf(F, "%s\n", p[i].dosage);
   fprintf(D, "%s\n", p[i].dosage);
+  fprintf(F, "\n");
+  fprintf(D, "\n");
 }
-d += x;

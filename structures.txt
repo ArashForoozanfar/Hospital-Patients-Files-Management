@@ -10,6 +10,7 @@ struct pInfo{
   char noDate[100];
   char Drug[100];
   char dosage[100];
+  char extra[100];
 };
 struct Users{
   char Name[100];
