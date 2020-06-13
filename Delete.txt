@@ -1,27 +1,26 @@
-int j = 100;
-while(j != -1) {
-  p[z].fName[j] = '\0';
-  p[z].lName[j] = '\0';
-  p[z].cause[j] = '\0';
-  p[z].price_Date[j] = '\0';
-  p[z].noDate[j] = '\0';
-  p[z].Drug[j] = '\0';
-  p[z].dosage[j] = '\0';
-  j--;
+for (int i = 0; i < z; i++) {
+  fprintf(F, "%s\n", p[i].fName);
+  fprintf(F, "%s\n", p[i].lName);
+  fprintf(F, "%lld\n", p[z].id);
+  fprintf(F, "%lld\n", p[z].pNumber);
+  fprintf(F, "%lld\n", p[z].fId);
+  fprintf(F, "%s\n", p[z].cause);
+  fprintf(F, "%lld\n", p[z].price);
+  fprintf(F, "%s\n", p[z].price_Date);
+  fprintf(F, "%s\n", p[z].noDate);
+  fprintf(F, "%s\n", p[z].Drug);
+  fprintf(F, "%s\n", p[z].dosage);
 }
-p[z].id = 0;
-p[z].pNumber = 0;
-p[z].fId = 0;
-p[z].price = 0;
-fprintf(S, "%s\n", p[z].fName);
-fprintf(S, "%s\n", p[z].lName);
-fprintf(S, "%lld\n", p[z].id);
-fprintf(S, "%lld\n", p[z].pNumber);
-fprintf(S, "%lld\n", p[z].fId);
-fprintf(S, "%s\n", p[z].cause);
-fprintf(S, "%lld\n", p[z].price);
-fprintf(S, "%s\n", p[z].price_Date);
-fprintf(S, "%s\n", p[z].noDate);
-fprintf(S, "%s\n", p[z].Drug);
-fprintf(S, "%s\n", p[z].dosage);
-puts("patient information succssesfully deleted");
+for (int i = z + 1; p[i].fName != NULL; i++) {
+  fprintf(F, "%s\n", p[i].fName);
+  fprintf(F, "%s\n", p[i].lName);
+  fprintf(F, "%lld\n", p[z].id);
+  fprintf(F, "%lld\n", p[z].pNumber);
+  fprintf(F, "%lld\n", p[z].fId);
+  fprintf(F, "%s\n", p[z].cause);
+  fprintf(F, "%lld\n", p[z].price);
+  fprintf(F, "%s\n", p[z].price_Date);
+  fprintf(F, "%s\n", p[z].noDate);
+  fprintf(F, "%s\n", p[z].Drug);
+  fprintf(F, "%s\n", p[z].dosage);
+}
