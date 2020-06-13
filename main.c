@@ -64,37 +64,36 @@ int main()
       if (m == 1) {
         #include "Insert.txt"
       } else if (m == 2) {
-        puts("please select which number of Users you want to add:");
-        scanf("%d", &l);
-        printf("You want to add %d new Users so please enter:\n", l);
-        for (int i = 0; i < l; i++) {
-          printf("User FirstName and LastName: ");
-          scanf("%s", ad[i].Name);
-          fprintf(P, "%s\n", ad[i].Name);
-          printf("Username: ");
-          scanf("%s", ad[i].userName);
-          fprintf(P, "%s\n", ad[i].userName);
-          printf("Password: ");
-          scanf("%s", ad[i].password);
-          fprintf(P, "%s\n", ad[i].password);
-        }
-        puts("New Users succssesfully added to system ...");
-        puts("Now select(1) to enter new information or (0) to Exit ...");
-        scanf("%d", &k);
-        if (k == 1) {
-          #include "Insert.txt"
-        } else if (k == 0) {
-          exit(0);
-        }
-        } else if (m == 3) {
-        #include "Delete Users.txt"
-      }
+              puts("please select which number of Users you want to add:");
+              scanf("%d", &l);
+              printf("You want to add %d new Users so please enter:\n", l);
+              for (int i = 0; i < l; i++) {
+                printf("User FirstName and LastName: ");
+                scanf("%s", ad[i].Name);
+                fprintf(P, "%s\n", ad[i].Name);
+                printf("Username: ");
+                scanf("%s", ad[i].userName);
+                fprintf(P, "%s\n", ad[i].userName);
+                printf("Password: ");
+                scanf("%s", ad[i].password);
+                fprintf(P, "%s\n", ad[i].password);
+              }
+              puts("New Users succssesfully added to system ...");
+              puts("Now select(1) to enter new information or (0) to Exit ...");
+              scanf("%d", &k);
+              if (k == 1) {
+                #include "Insert.txt"
+              } else if (k == 0) {
+                      exit(0);
+                    }
+            } else if (m == 3) {
+                #include "Delete Users.txt"
+                  }
     }
     else {
         puts("Username or Password was incorrect, please try again...");
       }
     }
-
 
 
 
@@ -107,14 +106,17 @@ int main()
 
 
 
-
   if (n == 0) {
     //exit
     exit (0);
   }
-fclose (F);
-fclose (P);
-fclose (S);
-fclose (D);
-fclose (K);
+
+
+  fclose (F);
+  fclose (P);
+  fclose (S);
+  fclose (D);
+  fclose (K);
+
+
 }
