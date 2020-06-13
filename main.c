@@ -112,6 +112,9 @@ int main()
     //exit
     exit (0);
   }
-
-
+fclose (F);
+fclose (P);
+fclose (S);
+fclose (D);
+fclose (K);
 }
