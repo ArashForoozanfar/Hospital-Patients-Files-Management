@@ -36,8 +36,8 @@ int main()
   long long new_fId;
   char new_cause[100];
   long long new_price;
-  char* new_price_Date[100];
-  char* new_noDate[100];
+  char new_price_Date[100];
+  char new_noDate[100];
   char new_Drug[100];
   char new_Dosage[100];
   char User1[] = {"Admin1"};

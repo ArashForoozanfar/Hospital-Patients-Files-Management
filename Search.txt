@@ -2,6 +2,30 @@ puts("Select(1) to search by FirstName");
 puts("Select(2) to search by LastName");
 puts("Select(3) to search by ID");
 puts("Select(4) to search by FileNumber");
+for (int i = 0; i < 3; i++) {
+fscanf(F, "%s", p[i].fName);
+fscanf(F, "%s", p[i].lName);
+fscanf(F, "%lld", &p[i].id);
+fscanf(F, "%lld", &p[i].pNumber);
+fscanf(F, "%lld", &p[i].fId);
+fscanf(F, "%s", p[i].cause);
+fscanf(F, "%lld", &p[i].price);
+fscanf(F, "%s", p[i].price_Date);
+fscanf(F, "%s", p[i].noDate);
+fscanf(F, "%s", p[i].Drug);
+fscanf(F, "%s", p[i].dosage);
+printf("FirstName: %s\n", p[i].fName);
+printf("LastName: %s\n", p[i].lName);
+printf("ID: %lld\n", p[i].id);
+printf("PhoneNumber: %lld\n", p[i].pNumber);
+printf("FileNumber is %lld\n", p[i].fId);
+printf("Reason for Reference: %s\n", p[i].cause);
+printf("Price: %lld\n", p[i].price);
+printf("Price Date: %s\n", p[i].price_Date);
+printf("Prescription Date: %s\n", p[i].noDate);
+printf("Drug: %s\n", p[i].Drug);
+printf("Dosage: %s\n", p[i].dosage);
+}
 scanf("%d", &e);
 if (e == 1) {
   printf("Please enter the FirstName of patient you want to search:");
@@ -14,8 +38,8 @@ if (e == 1) {
       fscanf(F, "%lld", &p[i].fId);
       fscanf(F, "%s", p[i].cause);
       fscanf(F, "%lld", &p[i].price);
-      fscanf(F, "%s", *p[i].price_Date1);
-      fscanf(F, "%s", *p[i].noDate1);
+      fscanf(F, "%s", p[i].price_Date);
+      fscanf(F, "%s", p[i].noDate);
       fscanf(F, "%s", p[i].Drug);
       fscanf(F, "%s", p[i].dosage);
     }
@@ -41,8 +65,8 @@ if (e == 2) {
       fscanf(F, "%lld", &p[i].fId);
       fscanf(F, "%s", p[i].cause);
       fscanf(F, "%lld", &p[i].price);
-      fscanf(F, "%s", *p[i].price_Date1);
-      fscanf(F, "%s", *p[i].noDate1);
+      fscanf(F, "%s", p[i].price_Date);
+      fscanf(F, "%s", p[i].noDate);
       fscanf(F, "%s", p[i].Drug);
       fscanf(F, "%s", p[i].dosage);
     }
@@ -68,8 +92,8 @@ if (e == 3) {
       fscanf(F, "%lld", &p[i].fId);
       fscanf(F, "%s", p[i].cause);
       fscanf(F, "%lld", &p[i].price);
-      fscanf(F, "%s", *p[i].price_Date1);
-      fscanf(F, "%s", *p[i].noDate1);
+      fscanf(F, "%s", p[i].price_Date);
+      fscanf(F, "%s", p[i].noDate);
       fscanf(F, "%s", p[i].Drug);
       fscanf(F, "%s", p[i].dosage);
       }
@@ -95,8 +119,8 @@ scanf("%lld", &search_filenum);
     fscanf(F, "%lld", &p[i].fId);
     fscanf(F, "%s", p[i].cause);
     fscanf(F, "%lld", &p[i].price);
-    fscanf(F, "%s", *p[i].price_Date1);
-    fscanf(F, "%s", *p[i].noDate1);
+    fscanf(F, "%s", p[i].price_Date);
+    fscanf(F, "%s", p[i].noDate);
     fscanf(F, "%s", p[i].Drug);
     fscanf(F, "%s", p[i].dosage);
     }
@@ -111,7 +135,7 @@ scanf("%lld", &search_filenum);
     }
   }
 }
-printf("Select(1) to show and transport information of patients to new file  or  Select(2) to just show it:");
+printf("Select(1) to show and share information of patients to new file  or  Select(2) to just show it:");
 scanf("%d", &w);
 if (w == 1) {
   printf("FirstName: %s\n", p[z].fName);
@@ -128,10 +152,10 @@ if (w == 1) {
   fprintf(S, "Reason for Reference: %s\n", p[z].cause);
   printf("Price: %lld\n", p[z].price);
   fprintf(S, "Price: %lld\n", p[z].price);
-  printf("Price Date: %s\n", *p[z].price_Date1);
-  fprintf(S, "Price Date: %s\n", *p[z].price_Date1);
-  printf("Prescription Date: %s\n", *p[z].noDate1);
-  fprintf(S, "Prescription Date: %s\n", *p[z].noDate1);
+  printf("Price Date: %s\n", p[z].price_Date);
+  fprintf(S, "Price Date: %s\n", p[z].price_Date);
+  printf("Prescription Date: %s\n", p[z].noDate);
+  fprintf(S, "Prescription Date: %s\n", p[z].noDate);
   printf("Drug: %s\n", p[z].Drug);
   fprintf(S, "Drugs: %s\n", p[z].Drug);
   printf("Dosage: %s\n", p[z].dosage);
@@ -146,8 +170,8 @@ else if (w == 2) {
   printf("FileNumber is %lld\n", p[z].fId);
   printf("Reason for Reference: %s\n", p[z].cause);
   printf("Price: %lld\n", p[z].price);
-  printf("Price Date: %s\n", *p[z].price_Date1);
-  printf("Prescription Date: %s\n", *p[z].noDate1);
+  printf("Price Date: %s\n", p[z].price_Date);
+  printf("Prescription Date: %s\n", p[z].noDate);
   printf("Drug: %s\n", p[z].Drug);
   printf("Dosage: %s\n", p[z].dosage);
 }

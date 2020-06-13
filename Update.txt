@@ -55,17 +55,15 @@ if (c == 7) {
 }
 if (c == 8) {
   puts("Please write the new Price Date");
-  cur_time = time(NULL);
-  *new_price_Date = ctime(&cur_time);
-  strcpy(*p[z].price_Date1, *new_price_Date);
-  fprintf(F, "%s", *p[z].price_Date1);
+  scanf("%s", new_price_Date);
+  strcpy(p[z].price_Date, new_price_Date);
+  fprintf(F, "%s", p[z].price_Date);
 }
 if (c == 9) {
   puts("Please write the new Prescription Date");
-  cur_time = time(NULL);
-  *new_noDate = ctime(&cur_time);
-  strcpy(*p[z].noDate1, *new_noDate);
-  fprintf(F, "%s", *p[z].noDate1);
+  scanf("%s", new_noDate);
+  strcpy(p[z].noDate, new_noDate);
+  fprintf(F, "%s", p[z].noDate);
 }
 if (c == 10) {
   puts("Please write the new Drugs");
