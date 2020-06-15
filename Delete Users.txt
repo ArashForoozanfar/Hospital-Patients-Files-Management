@@ -5,12 +5,12 @@ scanf("%d", &t);
 FILE* Y = fopen("Users.txt", "w+");
 int i = 0;
 while(i < 3) {
-if (i != t) {
-  fprintf(Y, "%d", ad[i].index);
-  fprintf(Y, "%s\n", ad[i].Name);
-  fprintf(Y, "%s\n", ad[i].userName);
-  fprintf(Y, "%s\n", ad[i].password);
-  fprintf(Y, "\n");
+  if (i != t) {
+    fprintf(Y, "%d\n", ad[i].index);
+    fprintf(Y, "%s\n", ad[i].Name);
+    fprintf(Y, "%s\n", ad[i].userName);
+    fprintf(Y, "%s\n", ad[i].password);
+    fprintf(Y, "\n");
   }
   i++;
 }

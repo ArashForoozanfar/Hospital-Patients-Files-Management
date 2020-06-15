@@ -16,15 +16,22 @@ int main()
   FILE* S = fopen("Searched_Patients.txt", "a+");
   FILE* D = fopen("Prescriptions.txt", "a+");
   FILE* K = fopen("Updated_Patients.txt", "a+");
-  for (int i = 0; i < B; i++) {
+  for (int i = 0; i < 10; i++) {
     if (ad[i].Name != NULL) {
       q = i;
+      fscanf(P, "%d", &ad[i].index);
       fscanf(P, "%s", ad[i].Name);
       fscanf(P, "%s", ad[i].userName);
       fscanf(P, "%s", ad[i].password);
     }
   }
-  b = q - 4;
+  b = q - 6;
+  /*for (int i = 0; i < b; i++) {
+    printf("%d\n", ad[i].index);
+    printf("%s\n", ad[i].Name);
+    printf("%s\n", ad[i].userName);
+    printf("%s\n", ad[i].password);
+  }*/
   char search_fName[A];
   char search_lName[A];
   long long search_ID;
@@ -104,7 +111,7 @@ int main()
 
 
   if (n == 2) {
-    //Serach, Update and Delete
+    //Search, Update and Delete
     FILE* F = fopen("PatientsInfo.txt", "a+");
     puts("To Search patients information you need to Login to system:");
     #include "Login.txt"

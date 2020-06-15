@@ -17,5 +17,4 @@ struct Users{
   char Name[A];
   char userName[A];
   char password[A];
-  char ex[A];
 };
