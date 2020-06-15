@@ -1,19 +1,21 @@
 struct pInfo{
-  char fName[100];
-  char lName[100];
+  char fName[A];
+  char lName[A];
   long long id;
   long long pNumber;
   long long fId;
-  char cause[100];
+  char cause[A];
   long long price;
-  char price_Date[100];
-  char noDate[100];
-  char Drug[100];
-  char dosage[100];
-  char extra[100];
+  char price_Date[A];
+  char noDate[A];
+  char Drug[A];
+  char dosage[A];
+  char extra[A];
 };
 struct Users{
-  char Name[100];
-  char userName[100];
-  char password[100];
+  int index;
+  char Name[A];
+  char userName[A];
+  char password[A];
+  char ex[A];
 };

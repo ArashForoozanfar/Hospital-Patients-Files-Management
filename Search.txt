@@ -1,5 +1,5 @@
 fscanf(F, "%d", &v);
-printf("V = %d", v);
+printf("V: %d", v);
 puts("Select(1) to search by FirstName");
 puts("Select(2) to search by LastName");
 puts("Select(3) to search by ID");
@@ -44,7 +44,6 @@ else if (e == 2) {
       if (strcmp(search_lName, p[i].lName) == 0) {
         puts("Patients info found properly!");
         z = i;
-        break;
       }
     }
   }
@@ -66,7 +65,6 @@ else if (e == 3) {
       if (search_ID == p[i].id) {
         puts("Patients info found properly!");
         z = i;
-        break;
       }
     }
   }
@@ -88,7 +86,6 @@ scanf("%lld", &search_filenum);
     if (search_filenum == p[i].fId) {
       puts("Patients info found properly!");
       z = i;
-      break;
     }
   }
 }
@@ -120,7 +117,7 @@ if (w == 1) {
   fprintf(S, "\n");
 }
 else if (w == 2) {
-for (int i = 0; i < 4; i++) {
+for (int i = 0; i < v; i++) {
   printf("FirstName: %s\n", p[i].fName);
   printf("LastName: %s\n", p[i].lName);
   printf("ID: %lld\n", p[i].id);
@@ -134,8 +131,6 @@ for (int i = 0; i < 4; i++) {
   printf("Dosage: %s\n", p[i].dosage);
   }
 }
-fscanf(F, "%d", &v);
-printf("v = %d", v);
 fclose (F);
 puts("Now select(1) to Delete patient information  or  select(2) to Update patient information  or select(3) to Exit ...");
 scanf("%d", &r);

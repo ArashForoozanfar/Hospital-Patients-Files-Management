@@ -3,18 +3,20 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#define A 100
+#define B 10
 #include "structures.txt"
 int main()
 {
   time_t cur_time;
-  int n = 0, m = 0, k = 0, l = 0, q = 0, b = 0, cnt = 0, z = 0, w = 0, e = 0, r = 0, c = 0, d = 0, x = 0, v = 0;
-  struct pInfo p[100];
-  struct Users ad[10];
+  int n = 0, m = 0, k = 0, l = 0, q = 0, b = 0, cnt = 0, z = 0, w = 0, e = 0, r = 0, c = 0, d = 0, x = 0, v = 0, t = 0;
+  struct pInfo p[A];
+  struct Users ad[B];
   FILE* P = fopen("Users.txt", "a+");
   FILE* S = fopen("Searched_Patients.txt", "a+");
   FILE* D = fopen("Prescriptions.txt", "a+");
   FILE* K = fopen("Updated_Patients.txt", "a+");
-  for (int i = 0; i < 10; i++) {
+  for (int i = 0; i < B; i++) {
     if (ad[i].Name != NULL) {
       q = i;
       fscanf(P, "%s", ad[i].Name);
@@ -23,26 +25,26 @@ int main()
     }
   }
   b = q - 4;
-  char search_fName[100];
-  char search_lName[100];
+  char search_fName[A];
+  char search_lName[A];
   long long search_ID;
   long long search_filenum;
-  char Username[100];
-  char Password[100];
-  char new_fName[100];
-  char new_lName[100];
+  char Username[A];
+  char Password[A];
+  char new_fName[A];
+  char new_lName[A];
   long long new_id;
   long long new_pNumber;
   long long new_fId;
-  char new_cause[100];
+  char new_cause[A];
   long long new_price;
-  char new_price_Date[100];
-  char new_noDate[100];
-  char new_Drug[100];
-  char new_Dosage[100];
+  char new_price_Date[A];
+  char new_noDate[A];
+  char new_Drug[A];
+  char new_Dosage[A];
   char User1[] = {"Admin1"};
   char Pass1[] = {"Arash1234"};
-  char delUser[100];
+  char delUser[A];
   printf("Hello :D\nWelcome to Hospital system:)\n");
   printf("Please enter 0-2 key for below states:\n");
   printf("Insert(1)\nSearch, Delete and Update(2)\nExit(0)\n");
@@ -68,6 +70,9 @@ int main()
               scanf("%d", &l);
               printf("You want to add %d new Users so please enter:\n", l);
               for (int i = 0; i < l; i++) {
+                printf("User Index:");
+                scanf("%d", &ad[i].index);
+                fprintf(P, "%d\n", ad[i].index);
                 printf("User FirstName and LastName: ");
                 scanf("%s", ad[i].Name);
                 fprintf(P, "%s\n", ad[i].Name);
@@ -77,6 +82,7 @@ int main()
                 printf("Password: ");
                 scanf("%s", ad[i].password);
                 fprintf(P, "%s\n", ad[i].password);
+                fprintf(P, "\n");
               }
               puts("New Users succssesfully added to system ...");
               puts("Now select(1) to enter new information or (0) to Exit ...");

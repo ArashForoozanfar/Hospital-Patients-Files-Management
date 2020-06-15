@@ -1,32 +1,14 @@
 remove("PatientsInfo.txt");
+remove("Prescriptions.txt");
 FILE* U = fopen("PatientsInfo.txt", "w+");
+FILE* N = fopen("Prescriptions.txt", "w+");
 int i = 0;
-/* while(i != z && i < oooo) {
-  fprintf(U, "%s\n", p[i].fName);
-  fprintf(U, "%s\n", p[i].lName);
-  fprintf(U, "%lld\n", p[i].id);
-  fprintf(U, "%lld\n", p[i].pNumber);
-  fprintf(U, "%lld\n", p[i].fId);
-  fprintf(U, "%s\n", p[i].cause);
-  fprintf(U, "%lld\n", p[i].price);
-  fprintf(U, "%s\n", p[i].price_Date);
-  fprintf(U, "%s\n", p[i].noDate);
-  fprintf(U, "%s\n", p[i].Drug);
-  fprintf(U, "%s\n", p[i].dosage);
-  fprintf(U, "%s\n", p[i].extra);
-  printf("i : %d\n", i);
-  i++;
-  if (i == z) {
-  for (int j = 0; j < sizeof(struct p); j++);
-  i++;
-  }
-}
-*/
-printf("X = %d", v);
 while(i < v) {
 if (i != z) {
   fprintf(U, "%s\n", p[i].fName);
+  fprintf(N, "%s\n", p[i].fName);
   fprintf(U, "%s\n", p[i].lName);
+  fprintf(N, "%s\n", p[i].lName);
   fprintf(U, "%lld\n", p[i].id);
   fprintf(U, "%lld\n", p[i].pNumber);
   fprintf(U, "%lld\n", p[i].fId);
@@ -34,12 +16,16 @@ if (i != z) {
   fprintf(U, "%lld\n", p[i].price);
   fprintf(U, "%s\n", p[i].price_Date);
   fprintf(U, "%s\n", p[i].noDate);
+  fprintf(N, "%s\n", p[i].noDate);
   fprintf(U, "%s\n", p[i].Drug);
+  fprintf(N, "%s\n", p[i].Drug);
   fprintf(U, "%s\n", p[i].dosage);
+  fprintf(N, "%s\n", p[i].dosage);
   fprintf(U, "%s\n", p[i].extra);
-  printf("i : %d\n", i);
+  fprintf(N, "%s\n", p[i].extra);
   }
   i++;
 }
 puts("information has deleted succssesfully!");
 fclose (U);
+fclose (N);

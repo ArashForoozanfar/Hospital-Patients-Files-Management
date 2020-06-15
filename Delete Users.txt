@@ -1,19 +1,18 @@
+remove("User.txt");
 puts("You want to delete User specifications");
-printf("Write the Name of User you want to delete:");
-scanf("%s", delUser);
-for (int i = 0; i < b; i++) {
-  if (strcmp(delUser, ad[i].Name) == 0) {
-    char S1[100] = {0};
-    char S2[100] = {0};
-    char S3[100] = {0};
-    strcpy(ad[i].Name, S1);
-    strcpy(ad[i].userName, S2);
-    strcpy(ad[i].password, S3);
-    fprintf(P, "%s", ad[i].Name);
-    fprintf(P, "%s", ad[i].userName);
-    fprintf(P, "%s", ad[i].password);
-    puts("information has succssesfully deleted");
-    break;
+printf("Write the Number of User you want to delete:");
+scanf("%d", &t);
+FILE* Y = fopen("Users.txt", "w+");
+int i = 0;
+while(i < 3) {
+if (i != t) {
+  fprintf(Y, "%d", ad[i].index);
+  fprintf(Y, "%s\n", ad[i].Name);
+  fprintf(Y, "%s\n", ad[i].userName);
+  fprintf(Y, "%s\n", ad[i].password);
+  fprintf(Y, "\n");
   }
-  puts("User information didnt found :(");
+  i++;
 }
+puts("information has deleted succssesfully!");
+fclose (Y);
