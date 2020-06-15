@@ -2,7 +2,7 @@ printf("Z: %d\n", z);
 remove("PatientsInfo.txt");
 FILE* U = fopen("PatientsInfo.txt", "w+");
 int i = 0;
-while (i != z && i < 4) {
+while(i != z && i < 4) {
   fprintf(U, "%s\n", p[i].fName);
   fprintf(U, "%s\n", p[i].lName);
   fprintf(U, "%lld\n", p[i].id);
@@ -14,7 +14,7 @@ while (i != z && i < 4) {
   fprintf(U, "%s\n", p[i].noDate);
   fprintf(U, "%s\n", p[i].Drug);
   fprintf(U, "%s\n", p[i].dosage);
-  fprintf(U, "\n");
+  fprintf(U, "%s\n", p[i].extra);
   printf("i : %d\n", i);
   i++;
   if (i == z) {
