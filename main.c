@@ -15,7 +15,6 @@ int main()
   FILE* P = fopen("Users.txt", "a+");
   FILE* S = fopen("Searched_Patients.txt", "a+");
   FILE* D = fopen("Prescriptions.txt", "a+");
-  FILE* K = fopen("Updated_Patients.txt", "a+");
   for (int i = 0; i < 10; i++) {
     if (ad[i].Name != NULL) {
       q = i;
@@ -129,7 +128,6 @@ int main()
   fclose (P);
   fclose (S);
   fclose (D);
-  fclose (K);
 
 
 }
