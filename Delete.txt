@@ -1,13 +1,25 @@
-for (int i = 0; i != z && p[i].fName != NULL; i++) {
-  fprintf(F, "%s\n", p[i].fName);
-  fprintf(F, "%s\n", p[i].lName);
-  fprintf(F, "%lld\n", p[i].id);
-  fprintf(F, "%lld\n", p[i].pNumber);
-  fprintf(F, "%lld\n", p[i].fId);
-  fprintf(F, "%s\n", p[i].cause);
-  fprintf(F, "%lld\n", p[i].price);
-  fprintf(F, "%s\n", p[i].price_Date);
-  fprintf(F, "%s\n", p[i].noDate);
-  fprintf(F, "%s\n", p[i].Drug);
-  fprintf(F, "%s\n", p[i].dosage);
+printf("Z: %d\n", z);
+remove("PatientsInfo.txt");
+FILE* U = fopen("PatientsInfo.txt", "w+");
+int i = 0;
+while (i != z && i < 4) {
+  fprintf(U, "%s\n", p[i].fName);
+  fprintf(U, "%s\n", p[i].lName);
+  fprintf(U, "%lld\n", p[i].id);
+  fprintf(U, "%lld\n", p[i].pNumber);
+  fprintf(U, "%lld\n", p[i].fId);
+  fprintf(U, "%s\n", p[i].cause);
+  fprintf(U, "%lld\n", p[i].price);
+  fprintf(U, "%s\n", p[i].price_Date);
+  fprintf(U, "%s\n", p[i].noDate);
+  fprintf(U, "%s\n", p[i].Drug);
+  fprintf(U, "%s\n", p[i].dosage);
+  fprintf(U, "\n");
+  printf("i : %d\n", i);
+  i++;
+  if (i == z) {
+  i++;
+  }
 }
+puts("information has deleted succssesfully!");
+fclose (U);

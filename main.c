@@ -10,7 +10,6 @@ int main()
   int n = 0, m = 0, k = 0, l = 0, q = 0, b = 0, cnt = 0, x = 0, z = 0, w = 0, e = 0, r = 0, c = 0, d = 0;
   struct pInfo p[100];
   struct Users ad[10];
-  FILE* F = fopen("PatientsInfo.txt", "a+");
   FILE* P = fopen("Users.txt", "a+");
   FILE* S = fopen("Searched_Patients.txt", "a+");
   FILE* D = fopen("Prescriptions.txt", "a+");
@@ -51,6 +50,7 @@ int main()
 
   if (n == 1) {
     //Insert
+    FILE* F = fopen("PatientsInfo.txt", "a+");
     puts("For adding new information you need to Login to system");
     puts("please enter your Username and Password:");
     printf("Username:");
@@ -93,12 +93,13 @@ int main()
     else {
         puts("Username or Password was incorrect, please try again ...");
       }
+      fclose (F);
     }
-
 
 
   if (n == 2) {
     //Serach, Update and Delete
+    FILE* F = fopen("PatientsInfo.txt", "r+");
     puts("To Search patients information you need to Login to system:");
     #include "Login.txt"
     #include "Search.txt"
@@ -112,7 +113,6 @@ int main()
   }
 
 
-  fclose (F);
   fclose (P);
   fclose (S);
   fclose (D);
