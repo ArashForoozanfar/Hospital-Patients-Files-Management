@@ -131,7 +131,7 @@ else if (w == 2) {
   printf("Drug: %s\n", p[z].Drug);
   printf("Dosage: %s\n", p[z].dosage);
 }
-fclose (F)
+fclose (F);
 puts("Now select(1) to Delete patient information  or  select(2) to Update patient information  or select(3) to Exit ...");
 scanf("%d", &r);
 if (r == 1) {
