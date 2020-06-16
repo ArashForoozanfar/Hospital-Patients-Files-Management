@@ -26,6 +26,11 @@ if (i != z) {
   }
   i++;
 }
+fclose (Q);
+v -= 1;
+FILE* R = fopen("PatientsNumber.txt", "w+");
+fprintf(R, "%d", v);
+fclose (R);
 puts("information has deleted succssesfully!");
 fclose (U);
 fclose (N);

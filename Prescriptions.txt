@@ -1,23 +1,17 @@
 Arash
 Foroozanfar
-Jun12
-Advil
+June16
+Antibiotics
 2/day
 
 Behzad
 Foroozanfar
-Jun17
----
----
+June12
+Peniciline
+3/week
 
 Tony
 Cafel
-Jun23
+June16
 Advil
 2/day
-
-Navid
-Kianfar
-Jun18
----
----
