@@ -3,6 +3,7 @@ puts("Select(1) to search by FirstName");
 puts("Select(2) to search by LastName");
 puts("Select(3) to search by ID");
 puts("Select(4) to search by FileNumber");
+puts("Select(5) to search by Prescription Date");
 scanf("%d", &e);
 if (e == 1) {
   printf("Please enter the FirstName of patient you want to search:");
@@ -86,6 +87,44 @@ scanf("%lld", &search_filenum);
       puts("Patients info found properly!");
       z = i;
     }
+  }
+}
+else if (e == 5) {
+  printf("Please enter the Prescription Date of patient you want to search:");
+  scanf("%s", search_noDate);
+  for (int i = 0; i < v; i++) {
+    fscanf(F, "%s", p[i].fName);
+    fscanf(F, "%s", p[i].lName);
+    fscanf(F, "%lld", &p[i].id);
+    fscanf(F, "%lld", &p[i].pNumber);
+    fscanf(F, "%lld", &p[i].fId);
+    fscanf(F, "%s", p[i].cause);
+    fscanf(F, "%lld", &p[i].price);
+    fscanf(F, "%s", p[i].price_Date);
+    fscanf(F, "%s", p[i].noDate);
+    fscanf(F, "%s", p[i].Drug);
+    fscanf(F, "%s", p[i].dosage);
+    if (strcmp(search_noDate, p[i].noDate) == 0) {
+      puts("Patients info found properly!");
+      z = i;
+    }
+  }
+  printf("Now select(1) to show Prescription Data or select(2) to Save it on new file:");
+  scanf("%d", &s);
+  if (s == 1) {
+    printf("FirstName: %s\n", p[z].fName);
+    printf("LastName: %s\n", p[z].lName);
+    printf("Prescription Date: %s\n", p[z].noDate);
+    printf("Drug: %s\n", p[z].Drug);
+    printf("Dosage: %s\n", p[z].dosage);
+  }
+  else if (s == 2) {
+    fprintf(L, "FirstName: %s\n", p[z].fName);
+    fprintf(L, "LastName: %s\n", p[z].lName);
+    fprintf(L, "Prescription Date: %s\n", p[z].noDate);
+    fprintf(L, "Drug: %s\n", p[z].Drug);
+    fprintf(L, "Dosage: %s\n", p[z].dosage);
+    fprintf(L, "\n");
   }
 }
 printf("Select(1) to show and share information of patients to new file  or  Select(2) to just show it:");

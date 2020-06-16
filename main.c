@@ -9,13 +9,14 @@
 int main()
 {
   time_t cur_time;
-  int n = 0, m = 0, k = 0, l = 0, q = 0, b = 0, cnt = 0, z = 0, w = 0, e = 0, r = 0, c = 0, d = 0, x = 0, v = 0, t = 0;
+  int n = 0, m = 0, k = 0, l = 0, q = 0, b = 0, cnt = 0, z = 0, w = 0, e = 0, r = 0, c = 0, d = 0, x = 0, v = 0, t = 0, s = 0;
   struct pInfo p[A];
   struct Users ad[B];
   FILE* P = fopen("Users.txt", "a+");
   FILE* S = fopen("Searched_Patients.txt", "a+");
   FILE* D = fopen("Prescriptions.txt", "a+");
   FILE* Q = fopen("PatientsNumber.txt", "r+");
+  FILE* L = fopen("Searched_Prescriptions.txt", "a+");
   fscanf(Q, "%d", &v);
   for (int i = 0; i < 10; i++) {
     if (ad[i].Name != NULL) {
@@ -35,6 +36,7 @@ int main()
   }*/
   char search_fName[A];
   char search_lName[A];
+  char search_noDate[A];
   long long search_ID;
   long long search_filenum;
   char Username[A];
@@ -130,5 +132,6 @@ int main()
   fclose (P);
   fclose (S);
   fclose (D);
+  fclose (L);
 
 }
