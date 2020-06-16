@@ -1,5 +1,4 @@
 fscanf(F, "%d", &v);
-printf("V: %d", v);
 puts("Select(1) to search by FirstName");
 puts("Select(2) to search by LastName");
 puts("Select(3) to search by ID");
@@ -117,19 +116,17 @@ if (w == 1) {
   fprintf(S, "\n");
 }
 else if (w == 2) {
-for (int i = 0; i < v; i++) {
-  printf("FirstName: %s\n", p[i].fName);
-  printf("LastName: %s\n", p[i].lName);
-  printf("ID: %lld\n", p[i].id);
-  printf("PhoneNumber: %lld\n", p[i].pNumber);
-  printf("FileNumber is %lld\n", p[i].fId);
-  printf("Reason for Reference: %s\n", p[i].cause);
-  printf("Price: %lld\n", p[i].price);
-  printf("Price Date: %s\n", p[i].price_Date);
-  printf("Prescription Date: %s\n", p[i].noDate);
-  printf("Drug: %s\n", p[i].Drug);
-  printf("Dosage: %s\n", p[i].dosage);
-  }
+  printf("FirstName: %s\n", p[z].fName);
+  printf("LastName: %s\n", p[z].lName);
+  printf("ID: %lld\n", p[z].id);
+  printf("PhoneNumber: %lld\n", p[z].pNumber);
+  printf("FileNumber is %lld\n", p[z].fId);
+  printf("Reason for Reference: %s\n", p[z].cause);
+  printf("Price: %lld\n", p[z].price);
+  printf("Price Date: %s\n", p[z].price_Date);
+  printf("Prescription Date: %s\n", p[z].noDate);
+  printf("Drug: %s\n", p[z].Drug);
+  printf("Dosage: %s\n", p[z].dosage);
 }
 fclose (F);
 puts("Now select(1) to Delete patient information  or  select(2) to Update patient information  or select(3) to Exit ...");
