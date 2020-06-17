@@ -575,4 +575,5 @@ if (c == 11) {
   }
   puts("Patients Info succssesfully updated!");
 }
-fclose(K);
+fclose (K);
+fclose (C);
