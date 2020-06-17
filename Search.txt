@@ -1,3 +1,4 @@
+FILE* F = fopen("PatientsInfo.txt", "a+");
 fscanf(Q, "%d", &v);
 puts("Select(1) to search by FirstName");
 puts("Select(2) to search by LastName");

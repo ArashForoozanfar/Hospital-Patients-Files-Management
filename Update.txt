@@ -1,5 +1,7 @@
 remove("PatientsInfo.txt");
+remove("Prescriptions.txt");
 FILE* K = fopen("PatientsInfo.txt", "w+");
+FILE* C = fopen("Prescriptions.txt", "w+");
 puts("Select(1) to update FirstName");
 puts("Select(2) to update LastName");
 puts("Select(3) to update ID");
@@ -21,7 +23,9 @@ if (c == 1) {
     if (i == z) {
       strcpy(p[z].fName, new_fName);
       fprintf(K, "%s\n", p[i].fName);
+      fprintf(C, "%s\n", p[i].fName);
       fprintf(K, "%s\n", p[i].lName);
+      fprintf(C, "%s\n", p[i].lName);
       fprintf(K, "%lld\n", p[i].id);
       fprintf(K, "%lld\n", p[i].pNumber);
       fprintf(K, "%lld\n", p[i].fId);
@@ -29,13 +33,19 @@ if (c == 1) {
       fprintf(K, "%lld\n", p[i].price);
       fprintf(K, "%s\n", p[i].price_Date);
       fprintf(K, "%s\n", p[i].noDate);
+      fprintf(C, "%s\n", p[i].noDate);
       fprintf(K, "%s\n", p[i].Drug);
+      fprintf(C, "%s\n", p[i].Drug);
       fprintf(K, "%s\n", p[i].dosage);
+      fprintf(C, "%s\n", p[i].dosage);
       fprintf(K, "\n");
+      fprintf(C, "\n");
     }
     else if (i != z){
       fprintf(K, "%s\n", p[i].fName);
+      fprintf(C, "%s\n", p[i].fName);
       fprintf(K, "%s\n", p[i].lName);
+      fprintf(C, "%s\n", p[i].lName);
       fprintf(K, "%lld\n", p[i].id);
       fprintf(K, "%lld\n", p[i].pNumber);
       fprintf(K, "%lld\n", p[i].fId);
@@ -43,13 +53,19 @@ if (c == 1) {
       fprintf(K, "%lld\n", p[i].price);
       fprintf(K, "%s\n", p[i].price_Date);
       fprintf(K, "%s\n", p[i].noDate);
+      fprintf(C, "%s\n", p[i].noDate);
       fprintf(K, "%s\n", p[i].Drug);
+      fprintf(C, "%s\n", p[i].Drug);
       fprintf(K, "%s\n", p[i].dosage);
+      fprintf(C, "%s\n", p[i].dosage);
       fprintf(K, "\n");
+      fprintf(C, "\n");
     }
     i++;
   }
+  puts("Patients Info succssesfully updated!");
 }
+//______________________________________________________________________________
 if (c == 2) {
   puts("Please write the new LastName");
   scanf("%s", new_lName);
@@ -58,7 +74,9 @@ if (c == 2) {
     if (i == z) {
       strcpy(p[z].lName, new_lName);
       fprintf(K, "%s\n", p[i].fName);
+      fprintf(C, "%s\n", p[i].fName);
       fprintf(K, "%s\n", p[i].lName);
+      fprintf(C, "%s\n", p[i].lName);
       fprintf(K, "%lld\n", p[i].id);
       fprintf(K, "%lld\n", p[i].pNumber);
       fprintf(K, "%lld\n", p[i].fId);
@@ -66,13 +84,19 @@ if (c == 2) {
       fprintf(K, "%lld\n", p[i].price);
       fprintf(K, "%s\n", p[i].price_Date);
       fprintf(K, "%s\n", p[i].noDate);
+      fprintf(C, "%s\n", p[i].noDate);
       fprintf(K, "%s\n", p[i].Drug);
+      fprintf(C, "%s\n", p[i].Drug);
       fprintf(K, "%s\n", p[i].dosage);
+      fprintf(C, "%s\n", p[i].dosage);
       fprintf(K, "\n");
+      fprintf(C, "\n");
     }
     else if (i != z){
       fprintf(K, "%s\n", p[i].fName);
+      fprintf(C, "%s\n", p[i].fName);
       fprintf(K, "%s\n", p[i].lName);
+      fprintf(C, "%s\n", p[i].lName);
       fprintf(K, "%lld\n", p[i].id);
       fprintf(K, "%lld\n", p[i].pNumber);
       fprintf(K, "%lld\n", p[i].fId);
@@ -80,13 +104,19 @@ if (c == 2) {
       fprintf(K, "%lld\n", p[i].price);
       fprintf(K, "%s\n", p[i].price_Date);
       fprintf(K, "%s\n", p[i].noDate);
+      fprintf(C, "%s\n", p[i].noDate);
       fprintf(K, "%s\n", p[i].Drug);
+      fprintf(C, "%s\n", p[i].Drug);
       fprintf(K, "%s\n", p[i].dosage);
+      fprintf(C, "%s\n", p[i].dosage);
       fprintf(K, "\n");
+      fprintf(C, "\n");
     }
     i++;
   }
+  puts("Patients Info succssesfully updated!");
 }
+//______________________________________________________________________________
 if (c == 3) {
   puts("Please write the new ID");
   scanf("%lld", &new_id);
@@ -95,7 +125,9 @@ if (c == 3) {
     if (i == z) {
       p[z].id == new_id;
       fprintf(K, "%s\n", p[i].fName);
+      fprintf(C, "%s\n", p[i].fName);
       fprintf(K, "%s\n", p[i].lName);
+      fprintf(C, "%s\n", p[i].lName);
       fprintf(K, "%lld\n", p[i].id);
       fprintf(K, "%lld\n", p[i].pNumber);
       fprintf(K, "%lld\n", p[i].fId);
@@ -103,13 +135,19 @@ if (c == 3) {
       fprintf(K, "%lld\n", p[i].price);
       fprintf(K, "%s\n", p[i].price_Date);
       fprintf(K, "%s\n", p[i].noDate);
+      fprintf(C, "%s\n", p[i].noDate);
       fprintf(K, "%s\n", p[i].Drug);
+      fprintf(C, "%s\n", p[i].Drug);
       fprintf(K, "%s\n", p[i].dosage);
+      fprintf(C, "%s\n", p[i].dosage);
       fprintf(K, "\n");
+      fprintf(C, "\n");
     }
     else if (i != z){
       fprintf(K, "%s\n", p[i].fName);
+      fprintf(C, "%s\n", p[i].fName);
       fprintf(K, "%s\n", p[i].lName);
+      fprintf(C, "%s\n", p[i].lName);
       fprintf(K, "%lld\n", p[i].id);
       fprintf(K, "%lld\n", p[i].pNumber);
       fprintf(K, "%lld\n", p[i].fId);
@@ -117,13 +155,19 @@ if (c == 3) {
       fprintf(K, "%lld\n", p[i].price);
       fprintf(K, "%s\n", p[i].price_Date);
       fprintf(K, "%s\n", p[i].noDate);
+      fprintf(C, "%s\n", p[i].noDate);
       fprintf(K, "%s\n", p[i].Drug);
+      fprintf(C, "%s\n", p[i].Drug);
       fprintf(K, "%s\n", p[i].dosage);
+      fprintf(C, "%s\n", p[i].dosage);
       fprintf(K, "\n");
+      fprintf(C, "\n");
     }
     i++;
   }
+  puts("Patients Info succssesfully updated!");
 }
+//______________________________________________________________________________
 if (c == 4) {
   puts("Please write the new PhoneNumber");
   scanf("%lld", &new_pNumber);
@@ -132,7 +176,9 @@ if (c == 4) {
     if (i == z) {
       p[z].pNumber = new_pNumber;
       fprintf(K, "%s\n", p[i].fName);
+      fprintf(C, "%s\n", p[i].fName);
       fprintf(K, "%s\n", p[i].lName);
+      fprintf(C, "%s\n", p[i].lName);
       fprintf(K, "%lld\n", p[i].id);
       fprintf(K, "%lld\n", p[i].pNumber);
       fprintf(K, "%lld\n", p[i].fId);
@@ -140,13 +186,19 @@ if (c == 4) {
       fprintf(K, "%lld\n", p[i].price);
       fprintf(K, "%s\n", p[i].price_Date);
       fprintf(K, "%s\n", p[i].noDate);
+      fprintf(C, "%s\n", p[i].noDate);
       fprintf(K, "%s\n", p[i].Drug);
+      fprintf(C, "%s\n", p[i].Drug);
       fprintf(K, "%s\n", p[i].dosage);
+      fprintf(C, "%s\n", p[i].dosage);
       fprintf(K, "\n");
+      fprintf(C, "\n");
     }
     else if (i != z){
       fprintf(K, "%s\n", p[i].fName);
+      fprintf(C, "%s\n", p[i].fName);
       fprintf(K, "%s\n", p[i].lName);
+      fprintf(C, "%s\n", p[i].lName);
       fprintf(K, "%lld\n", p[i].id);
       fprintf(K, "%lld\n", p[i].pNumber);
       fprintf(K, "%lld\n", p[i].fId);
@@ -154,13 +206,19 @@ if (c == 4) {
       fprintf(K, "%lld\n", p[i].price);
       fprintf(K, "%s\n", p[i].price_Date);
       fprintf(K, "%s\n", p[i].noDate);
+      fprintf(C, "%s\n", p[i].noDate);
       fprintf(K, "%s\n", p[i].Drug);
+      fprintf(C, "%s\n", p[i].Drug);
       fprintf(K, "%s\n", p[i].dosage);
+      fprintf(C, "%s\n", p[i].dosage);
       fprintf(K, "\n");
+      fprintf(C, "\n");
     }
     i++;
   }
+  puts("Patients Info succssesfully updated!");
 }
+//______________________________________________________________________________
 if (c == 5) {
   puts("Please write the new FileNumber");
   scanf("%lld", &new_fId);
@@ -169,7 +227,9 @@ if (c == 5) {
     if (i == z) {
       p[z].fId = new_fId;
       fprintf(K, "%s\n", p[i].fName);
+      fprintf(C, "%s\n", p[i].fName);
       fprintf(K, "%s\n", p[i].lName);
+      fprintf(C, "%s\n", p[i].lName);
       fprintf(K, "%lld\n", p[i].id);
       fprintf(K, "%lld\n", p[i].pNumber);
       fprintf(K, "%lld\n", p[i].fId);
@@ -177,13 +237,19 @@ if (c == 5) {
       fprintf(K, "%lld\n", p[i].price);
       fprintf(K, "%s\n", p[i].price_Date);
       fprintf(K, "%s\n", p[i].noDate);
+      fprintf(C, "%s\n", p[i].noDate);
       fprintf(K, "%s\n", p[i].Drug);
+      fprintf(C, "%s\n", p[i].Drug);
       fprintf(K, "%s\n", p[i].dosage);
+      fprintf(C, "%s\n", p[i].dosage);
       fprintf(K, "\n");
+      fprintf(C, "\n");
     }
     else if (i != z){
       fprintf(K, "%s\n", p[i].fName);
+      fprintf(C, "%s\n", p[i].fName);
       fprintf(K, "%s\n", p[i].lName);
+      fprintf(C, "%s\n", p[i].lName);
       fprintf(K, "%lld\n", p[i].id);
       fprintf(K, "%lld\n", p[i].pNumber);
       fprintf(K, "%lld\n", p[i].fId);
@@ -191,13 +257,19 @@ if (c == 5) {
       fprintf(K, "%lld\n", p[i].price);
       fprintf(K, "%s\n", p[i].price_Date);
       fprintf(K, "%s\n", p[i].noDate);
+      fprintf(C, "%s\n", p[i].noDate);
       fprintf(K, "%s\n", p[i].Drug);
+      fprintf(C, "%s\n", p[i].Drug);
       fprintf(K, "%s\n", p[i].dosage);
+      fprintf(C, "%s\n", p[i].dosage);
       fprintf(K, "\n");
+      fprintf(C, "\n");
     }
     i++;
   }
+  puts("Patients Info succssesfully updated!");
 }
+//______________________________________________________________________________
 if (c == 6) {
   puts("Please write the new Reason for Reference");
   scanf("%s", new_cause);
@@ -206,7 +278,9 @@ if (c == 6) {
     if (i == z) {
       strcpy(p[z].cause, new_cause);
       fprintf(K, "%s\n", p[i].fName);
+      fprintf(C, "%s\n", p[i].fName);
       fprintf(K, "%s\n", p[i].lName);
+      fprintf(C, "%s\n", p[i].lName);
       fprintf(K, "%lld\n", p[i].id);
       fprintf(K, "%lld\n", p[i].pNumber);
       fprintf(K, "%lld\n", p[i].fId);
@@ -214,13 +288,19 @@ if (c == 6) {
       fprintf(K, "%lld\n", p[i].price);
       fprintf(K, "%s\n", p[i].price_Date);
       fprintf(K, "%s\n", p[i].noDate);
+      fprintf(C, "%s\n", p[i].noDate);
       fprintf(K, "%s\n", p[i].Drug);
+      fprintf(C, "%s\n", p[i].Drug);
       fprintf(K, "%s\n", p[i].dosage);
+      fprintf(C, "%s\n", p[i].dosage);
       fprintf(K, "\n");
+      fprintf(C, "\n");
     }
     else if (i != z){
       fprintf(K, "%s\n", p[i].fName);
+      fprintf(C, "%s\n", p[i].fName);
       fprintf(K, "%s\n", p[i].lName);
+      fprintf(C, "%s\n", p[i].lName);
       fprintf(K, "%lld\n", p[i].id);
       fprintf(K, "%lld\n", p[i].pNumber);
       fprintf(K, "%lld\n", p[i].fId);
@@ -228,14 +308,19 @@ if (c == 6) {
       fprintf(K, "%lld\n", p[i].price);
       fprintf(K, "%s\n", p[i].price_Date);
       fprintf(K, "%s\n", p[i].noDate);
+      fprintf(C, "%s\n", p[i].noDate);
       fprintf(K, "%s\n", p[i].Drug);
+      fprintf(C, "%s\n", p[i].Drug);
       fprintf(K, "%s\n", p[i].dosage);
+      fprintf(C, "%s\n", p[i].dosage);
       fprintf(K, "\n");
+      fprintf(C, "\n");
     }
     i++;
   }
-
+  puts("Patients Info succssesfully updated!");
 }
+//______________________________________________________________________________
 if (c == 7) {
   puts("Please write the new Price");
   scanf("%lld", &new_price);
@@ -244,7 +329,9 @@ if (c == 7) {
     if (i == z) {
       p[z].price += new_price;
       fprintf(K, "%s\n", p[i].fName);
+      fprintf(C, "%s\n", p[i].fName);
       fprintf(K, "%s\n", p[i].lName);
+      fprintf(C, "%s\n", p[i].lName);
       fprintf(K, "%lld\n", p[i].id);
       fprintf(K, "%lld\n", p[i].pNumber);
       fprintf(K, "%lld\n", p[i].fId);
@@ -252,13 +339,19 @@ if (c == 7) {
       fprintf(K, "%lld\n", p[i].price);
       fprintf(K, "%s\n", p[i].price_Date);
       fprintf(K, "%s\n", p[i].noDate);
+      fprintf(C, "%s\n", p[i].noDate);
       fprintf(K, "%s\n", p[i].Drug);
+      fprintf(C, "%s\n", p[i].Drug);
       fprintf(K, "%s\n", p[i].dosage);
+      fprintf(C, "%s\n", p[i].dosage);
       fprintf(K, "\n");
+      fprintf(C, "\n");
     }
     else if (i != z){
       fprintf(K, "%s\n", p[i].fName);
+      fprintf(C, "%s\n", p[i].fName);
       fprintf(K, "%s\n", p[i].lName);
+      fprintf(C, "%s\n", p[i].lName);
       fprintf(K, "%lld\n", p[i].id);
       fprintf(K, "%lld\n", p[i].pNumber);
       fprintf(K, "%lld\n", p[i].fId);
@@ -266,13 +359,19 @@ if (c == 7) {
       fprintf(K, "%lld\n", p[i].price);
       fprintf(K, "%s\n", p[i].price_Date);
       fprintf(K, "%s\n", p[i].noDate);
+      fprintf(C, "%s\n", p[i].noDate);
       fprintf(K, "%s\n", p[i].Drug);
+      fprintf(C, "%s\n", p[i].Drug);
       fprintf(K, "%s\n", p[i].dosage);
+      fprintf(C, "%s\n", p[i].dosage);
       fprintf(K, "\n");
+      fprintf(C, "\n");
     }
     i++;
   }
+  puts("Patients Info succssesfully updated!");
 }
+//______________________________________________________________________________
 if (c == 8) {
   puts("Please write the new Price Date");
   scanf("%s", new_price_Date);
@@ -281,7 +380,9 @@ if (c == 8) {
     if (i == z) {
       strcpy(p[z].price_Date, new_price_Date);
       fprintf(K, "%s\n", p[i].fName);
+      fprintf(C, "%s\n", p[i].fName);
       fprintf(K, "%s\n", p[i].lName);
+      fprintf(C, "%s\n", p[i].lName);
       fprintf(K, "%lld\n", p[i].id);
       fprintf(K, "%lld\n", p[i].pNumber);
       fprintf(K, "%lld\n", p[i].fId);
@@ -289,13 +390,19 @@ if (c == 8) {
       fprintf(K, "%lld\n", p[i].price);
       fprintf(K, "%s\n", p[i].price_Date);
       fprintf(K, "%s\n", p[i].noDate);
+      fprintf(C, "%s\n", p[i].noDate);
       fprintf(K, "%s\n", p[i].Drug);
+      fprintf(C, "%s\n", p[i].Drug);
       fprintf(K, "%s\n", p[i].dosage);
+      fprintf(C, "%s\n", p[i].dosage);
       fprintf(K, "\n");
+      fprintf(C, "\n");
     }
     else if (i != z){
       fprintf(K, "%s\n", p[i].fName);
+      fprintf(C, "%s\n", p[i].fName);
       fprintf(K, "%s\n", p[i].lName);
+      fprintf(C, "%s\n", p[i].lName);
       fprintf(K, "%lld\n", p[i].id);
       fprintf(K, "%lld\n", p[i].pNumber);
       fprintf(K, "%lld\n", p[i].fId);
@@ -303,13 +410,19 @@ if (c == 8) {
       fprintf(K, "%lld\n", p[i].price);
       fprintf(K, "%s\n", p[i].price_Date);
       fprintf(K, "%s\n", p[i].noDate);
+      fprintf(C, "%s\n", p[i].noDate);
       fprintf(K, "%s\n", p[i].Drug);
+      fprintf(C, "%s\n", p[i].Drug);
       fprintf(K, "%s\n", p[i].dosage);
+      fprintf(C, "%s\n", p[i].dosage);
       fprintf(K, "\n");
+      fprintf(C, "\n");
     }
     i++;
   }
+  puts("Patients Info succssesfully updated!");
 }
+//______________________________________________________________________________
 if (c == 9) {
   puts("Please write the new Prescription Date");
   scanf("%s", new_noDate);
@@ -318,7 +431,9 @@ if (c == 9) {
     if (i == z) {
       strcpy(p[z].noDate, new_noDate);
       fprintf(K, "%s\n", p[i].fName);
+      fprintf(C, "%s\n", p[i].fName);
       fprintf(K, "%s\n", p[i].lName);
+      fprintf(C, "%s\n", p[i].lName);
       fprintf(K, "%lld\n", p[i].id);
       fprintf(K, "%lld\n", p[i].pNumber);
       fprintf(K, "%lld\n", p[i].fId);
@@ -326,13 +441,19 @@ if (c == 9) {
       fprintf(K, "%lld\n", p[i].price);
       fprintf(K, "%s\n", p[i].price_Date);
       fprintf(K, "%s\n", p[i].noDate);
+      fprintf(C, "%s\n", p[i].noDate);
       fprintf(K, "%s\n", p[i].Drug);
+      fprintf(C, "%s\n", p[i].Drug);
       fprintf(K, "%s\n", p[i].dosage);
+      fprintf(C, "%s\n", p[i].dosage);
       fprintf(K, "\n");
+      fprintf(C, "\n");
     }
     else if (i != z){
       fprintf(K, "%s\n", p[i].fName);
+      fprintf(C, "%s\n", p[i].fName);
       fprintf(K, "%s\n", p[i].lName);
+      fprintf(C, "%s\n", p[i].lName);
       fprintf(K, "%lld\n", p[i].id);
       fprintf(K, "%lld\n", p[i].pNumber);
       fprintf(K, "%lld\n", p[i].fId);
@@ -340,13 +461,19 @@ if (c == 9) {
       fprintf(K, "%lld\n", p[i].price);
       fprintf(K, "%s\n", p[i].price_Date);
       fprintf(K, "%s\n", p[i].noDate);
+      fprintf(C, "%s\n", p[i].noDate);
       fprintf(K, "%s\n", p[i].Drug);
+      fprintf(C, "%s\n", p[i].Drug);
       fprintf(K, "%s\n", p[i].dosage);
+      fprintf(C, "%s\n", p[i].dosage);
       fprintf(K, "\n");
+      fprintf(C, "\n");
     }
     i++;
   }
+  puts("Patients Info succssesfully updated!");
 }
+//______________________________________________________________________________
 if (c == 10) {
   puts("Please write the new Drugs");
   scanf("%s", new_Drug);
@@ -355,7 +482,9 @@ if (c == 10) {
     if (i == z) {
       strcpy(p[z].Drug, new_Drug);
       fprintf(K, "%s\n", p[i].fName);
+      fprintf(C, "%s\n", p[i].fName);
       fprintf(K, "%s\n", p[i].lName);
+      fprintf(C, "%s\n", p[i].lName);
       fprintf(K, "%lld\n", p[i].id);
       fprintf(K, "%lld\n", p[i].pNumber);
       fprintf(K, "%lld\n", p[i].fId);
@@ -363,13 +492,19 @@ if (c == 10) {
       fprintf(K, "%lld\n", p[i].price);
       fprintf(K, "%s\n", p[i].price_Date);
       fprintf(K, "%s\n", p[i].noDate);
+      fprintf(C, "%s\n", p[i].noDate);
       fprintf(K, "%s\n", p[i].Drug);
+      fprintf(C, "%s\n", p[i].Drug);
       fprintf(K, "%s\n", p[i].dosage);
+      fprintf(C, "%s\n", p[i].dosage);
       fprintf(K, "\n");
+      fprintf(C, "\n");
     }
     else if (i != z){
       fprintf(K, "%s\n", p[i].fName);
+      fprintf(C, "%s\n", p[i].fName);
       fprintf(K, "%s\n", p[i].lName);
+      fprintf(C, "%s\n", p[i].lName);
       fprintf(K, "%lld\n", p[i].id);
       fprintf(K, "%lld\n", p[i].pNumber);
       fprintf(K, "%lld\n", p[i].fId);
@@ -377,13 +512,19 @@ if (c == 10) {
       fprintf(K, "%lld\n", p[i].price);
       fprintf(K, "%s\n", p[i].price_Date);
       fprintf(K, "%s\n", p[i].noDate);
+      fprintf(C, "%s\n", p[i].noDate);
       fprintf(K, "%s\n", p[i].Drug);
+      fprintf(C, "%s\n", p[i].Drug);
       fprintf(K, "%s\n", p[i].dosage);
+      fprintf(C, "%s\n", p[i].dosage);
       fprintf(K, "\n");
+      fprintf(C, "\n");
     }
     i++;
   }
+  puts("Patients Info succssesfully updated!");
 }
+//______________________________________________________________________________
 if (c == 11) {
   puts("Please write the new Dosage");
   scanf("%s", new_Dosage);
@@ -392,7 +533,9 @@ if (c == 11) {
     if (i == z) {
       strcpy(p[z].dosage, new_Dosage);
       fprintf(K, "%s\n", p[i].fName);
+      fprintf(C, "%s\n", p[i].fName);
       fprintf(K, "%s\n", p[i].lName);
+      fprintf(C, "%s\n", p[i].lName);
       fprintf(K, "%lld\n", p[i].id);
       fprintf(K, "%lld\n", p[i].pNumber);
       fprintf(K, "%lld\n", p[i].fId);
@@ -400,13 +543,19 @@ if (c == 11) {
       fprintf(K, "%lld\n", p[i].price);
       fprintf(K, "%s\n", p[i].price_Date);
       fprintf(K, "%s\n", p[i].noDate);
+      fprintf(C, "%s\n", p[i].noDate);
       fprintf(K, "%s\n", p[i].Drug);
+      fprintf(C, "%s\n", p[i].Drug);
       fprintf(K, "%s\n", p[i].dosage);
+      fprintf(C, "%s\n", p[i].dosage);
       fprintf(K, "\n");
+      fprintf(C, "\n");
     }
     else if (i != z){
       fprintf(K, "%s\n", p[i].fName);
+      fprintf(C, "%s\n", p[i].fName);
       fprintf(K, "%s\n", p[i].lName);
+      fprintf(C, "%s\n", p[i].lName);
       fprintf(K, "%lld\n", p[i].id);
       fprintf(K, "%lld\n", p[i].pNumber);
       fprintf(K, "%lld\n", p[i].fId);
@@ -414,11 +563,16 @@ if (c == 11) {
       fprintf(K, "%lld\n", p[i].price);
       fprintf(K, "%s\n", p[i].price_Date);
       fprintf(K, "%s\n", p[i].noDate);
+      fprintf(C, "%s\n", p[i].noDate);
       fprintf(K, "%s\n", p[i].Drug);
+      fprintf(C, "%s\n", p[i].Drug);
       fprintf(K, "%s\n", p[i].dosage);
+      fprintf(C, "%s\n", p[i].dosage);
       fprintf(K, "\n");
+      fprintf(C, "\n");
     }
     i++;
   }
+  puts("Patients Info succssesfully updated!");
 }
 fclose(K);

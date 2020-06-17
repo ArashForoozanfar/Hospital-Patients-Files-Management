@@ -18,6 +18,7 @@ int main()
   FILE* Q = fopen("PatientsNumber.txt", "r+");
   FILE* L = fopen("Searched_Prescriptions.txt", "a+");
   fscanf(Q, "%d", &v);
+  printf("Number of Patients: %d\n", v);
   for (int i = 0; i < 10; i++) {
     if (ad[i].Name != NULL) {
       q = i;
@@ -59,7 +60,7 @@ int main()
   printf("Please enter 0-2 key for below states:\n");
   printf("Insert(1)\nSearch, Delete and Update(2)\nExit(0)\n");
   scanf("%d", &n);
-
+  //____________________________________________________________________________
   if (n == 1) {
     //Insert
     FILE* F = fopen("PatientsInfo.txt", "a+");
@@ -112,16 +113,16 @@ int main()
       fclose (F);
     }
 
+//______________________________________________________________________________
 
   if (n == 2) {
     //Search, Update and Delete
-    FILE* F = fopen("PatientsInfo.txt", "a+");
     puts("To Search patients information you need to Login to system:");
     #include "Login.txt"
     #include "Search.txt"
     }
 
-
+//______________________________________________________________________________
 
   if (n == 0) {
     //exit
