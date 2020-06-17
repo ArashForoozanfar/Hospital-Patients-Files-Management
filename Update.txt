@@ -20,31 +20,31 @@ if (c == 1) {
   while (i < v) {
     if (i == z) {
       strcpy(p[z].fName, new_fName);
-      fprintf(K, "FirstName: %s\n", p[i].fName);
-      fprintf(K, "LastName: %s\n", p[i].lName);
-      fprintf(K, "ID: %lld\n", p[i].id);
-      fprintf(K, "PhoneNumber: %lld\n", p[i].pNumber);
-      fprintf(K, "FileNumber is %lld\n", p[i].fId);
-      fprintf(K, "Reason for Reference: %s\n", p[i].cause);
-      fprintf(K, "Price: %lld\n", p[i].price);
-      fprintf(K, "Price Date: %s\n", p[i].price_Date);
-      fprintf(K, "Prescription Date: %s\n", p[i].noDate);
-      fprintf(K, "Drug: %s\n", p[i].Drug);
-      fprintf(K, "Dosage: %s\n", p[i].dosage);
+      fprintf(K, "%s\n", p[i].fName);
+      fprintf(K, "%s\n", p[i].lName);
+      fprintf(K, "%lld\n", p[i].id);
+      fprintf(K, "%lld\n", p[i].pNumber);
+      fprintf(K, "%lld\n", p[i].fId);
+      fprintf(K, "%s\n", p[i].cause);
+      fprintf(K, "%lld\n", p[i].price);
+      fprintf(K, "%s\n", p[i].price_Date);
+      fprintf(K, "%s\n", p[i].noDate);
+      fprintf(K, "%s\n", p[i].Drug);
+      fprintf(K, "%s\n", p[i].dosage);
       fprintf(K, "\n");
     }
     else if (i != z){
-      fprintf(K, "FirstName: %s\n", p[i].fName);
-      fprintf(K, "LastName: %s\n", p[i].lName);
-      fprintf(K, "ID: %lld\n", p[i].id);
-      fprintf(K, "PhoneNumber: %lld\n", p[i].pNumber);
-      fprintf(K, "FileNumber is %lld\n", p[i].fId);
-      fprintf(K, "Reason for Reference: %s\n", p[i].cause);
-      fprintf(K, "Price: %lld\n", p[i].price);
-      fprintf(K, "Price Date: %s\n", p[i].price_Date);
-      fprintf(K, "Prescription Date: %s\n", p[i].noDate);
-      fprintf(K, "Drug: %s\n", p[i].Drug);
-      fprintf(K, "Dosage: %s\n", p[i].dosage);
+      fprintf(K, "%s\n", p[i].fName);
+      fprintf(K, "%s\n", p[i].lName);
+      fprintf(K, "%lld\n", p[i].id);
+      fprintf(K, "%lld\n", p[i].pNumber);
+      fprintf(K, "%lld\n", p[i].fId);
+      fprintf(K, "%s\n", p[i].cause);
+      fprintf(K, "%lld\n", p[i].price);
+      fprintf(K, "%s\n", p[i].price_Date);
+      fprintf(K, "%s\n", p[i].noDate);
+      fprintf(K, "%s\n", p[i].Drug);
+      fprintf(K, "%s\n", p[i].dosage);
       fprintf(K, "\n");
     }
     i++;
@@ -57,31 +57,31 @@ if (c == 2) {
   while (i < v) {
     if (i == z) {
       strcpy(p[z].lName, new_lName);
-      fprintf(K, "FirstName: %s\n", p[i].fName);
-      fprintf(K, "LastName: %s\n", p[i].lName);
-      fprintf(K, "ID: %lld\n", p[i].id);
-      fprintf(K, "PhoneNumber: %lld\n", p[i].pNumber);
-      fprintf(K, "FileNumber is %lld\n", p[i].fId);
-      fprintf(K, "Reason for Reference: %s\n", p[i].cause);
-      fprintf(K, "Price: %lld\n", p[i].price);
-      fprintf(K, "Price Date: %s\n", p[i].price_Date);
-      fprintf(K, "Prescription Date: %s\n", p[i].noDate);
-      fprintf(K, "Drug: %s\n", p[i].Drug);
-      fprintf(K, "Dosage: %s\n", p[i].dosage);
+      fprintf(K, "%s\n", p[i].fName);
+      fprintf(K, "%s\n", p[i].lName);
+      fprintf(K, "%lld\n", p[i].id);
+      fprintf(K, "%lld\n", p[i].pNumber);
+      fprintf(K, "%lld\n", p[i].fId);
+      fprintf(K, "%s\n", p[i].cause);
+      fprintf(K, "%lld\n", p[i].price);
+      fprintf(K, "%s\n", p[i].price_Date);
+      fprintf(K, "%s\n", p[i].noDate);
+      fprintf(K, "%s\n", p[i].Drug);
+      fprintf(K, "%s\n", p[i].dosage);
       fprintf(K, "\n");
     }
     else if (i != z){
-      fprintf(K, "FirstName: %s\n", p[i].fName);
-      fprintf(K, "LastName: %s\n", p[i].lName);
-      fprintf(K, "ID: %lld\n", p[i].id);
-      fprintf(K, "PhoneNumber: %lld\n", p[i].pNumber);
-      fprintf(K, "FileNumber is %lld\n", p[i].fId);
-      fprintf(K, "Reason for Reference: %s\n", p[i].cause);
-      fprintf(K, "Price: %lld\n", p[i].price);
-      fprintf(K, "Price Date: %s\n", p[i].price_Date);
-      fprintf(K, "Prescription Date: %s\n", p[i].noDate);
-      fprintf(K, "Drug: %s\n", p[i].Drug);
-      fprintf(K, "Dosage: %s\n", p[i].dosage);
+      fprintf(K, "%s\n", p[i].fName);
+      fprintf(K, "%s\n", p[i].lName);
+      fprintf(K, "%lld\n", p[i].id);
+      fprintf(K, "%lld\n", p[i].pNumber);
+      fprintf(K, "%lld\n", p[i].fId);
+      fprintf(K, "%s\n", p[i].cause);
+      fprintf(K, "%lld\n", p[i].price);
+      fprintf(K, "%s\n", p[i].price_Date);
+      fprintf(K, "%s\n", p[i].noDate);
+      fprintf(K, "%s\n", p[i].Drug);
+      fprintf(K, "%s\n", p[i].dosage);
       fprintf(K, "\n");
     }
     i++;
@@ -94,31 +94,31 @@ if (c == 3) {
   while (i < v) {
     if (i == z) {
       p[z].id == new_id;
-      fprintf(K, "FirstName: %s\n", p[i].fName);
-      fprintf(K, "LastName: %s\n", p[i].lName);
-      fprintf(K, "ID: %lld\n", p[i].id);
-      fprintf(K, "PhoneNumber: %lld\n", p[i].pNumber);
-      fprintf(K, "FileNumber is %lld\n", p[i].fId);
-      fprintf(K, "Reason for Reference: %s\n", p[i].cause);
-      fprintf(K, "Price: %lld\n", p[i].price);
-      fprintf(K, "Price Date: %s\n", p[i].price_Date);
-      fprintf(K, "Prescription Date: %s\n", p[i].noDate);
-      fprintf(K, "Drug: %s\n", p[i].Drug);
-      fprintf(K, "Dosage: %s\n", p[i].dosage);
+      fprintf(K, "%s\n", p[i].fName);
+      fprintf(K, "%s\n", p[i].lName);
+      fprintf(K, "%lld\n", p[i].id);
+      fprintf(K, "%lld\n", p[i].pNumber);
+      fprintf(K, "%lld\n", p[i].fId);
+      fprintf(K, "%s\n", p[i].cause);
+      fprintf(K, "%lld\n", p[i].price);
+      fprintf(K, "%s\n", p[i].price_Date);
+      fprintf(K, "%s\n", p[i].noDate);
+      fprintf(K, "%s\n", p[i].Drug);
+      fprintf(K, "%s\n", p[i].dosage);
       fprintf(K, "\n");
     }
     else if (i != z){
-      fprintf(K, "FirstName: %s\n", p[i].fName);
-      fprintf(K, "LastName: %s\n", p[i].lName);
-      fprintf(K, "ID: %lld\n", p[i].id);
-      fprintf(K, "PhoneNumber: %lld\n", p[i].pNumber);
-      fprintf(K, "FileNumber is %lld\n", p[i].fId);
-      fprintf(K, "Reason for Reference: %s\n", p[i].cause);
-      fprintf(K, "Price: %lld\n", p[i].price);
-      fprintf(K, "Price Date: %s\n", p[i].price_Date);
-      fprintf(K, "Prescription Date: %s\n", p[i].noDate);
-      fprintf(K, "Drug: %s\n", p[i].Drug);
-      fprintf(K, "Dosage: %s\n", p[i].dosage);
+      fprintf(K, "%s\n", p[i].fName);
+      fprintf(K, "%s\n", p[i].lName);
+      fprintf(K, "%lld\n", p[i].id);
+      fprintf(K, "%lld\n", p[i].pNumber);
+      fprintf(K, "%lld\n", p[i].fId);
+      fprintf(K, "%s\n", p[i].cause);
+      fprintf(K, "%lld\n", p[i].price);
+      fprintf(K, "%s\n", p[i].price_Date);
+      fprintf(K, "%s\n", p[i].noDate);
+      fprintf(K, "%s\n", p[i].Drug);
+      fprintf(K, "%s\n", p[i].dosage);
       fprintf(K, "\n");
     }
     i++;
@@ -131,31 +131,31 @@ if (c == 4) {
   while (i < v) {
     if (i == z) {
       p[z].pNumber = new_pNumber;
-      fprintf(K, "FirstName: %s\n", p[i].fName);
-      fprintf(K, "LastName: %s\n", p[i].lName);
-      fprintf(K, "ID: %lld\n", p[i].id);
-      fprintf(K, "PhoneNumber: %lld\n", p[i].pNumber);
-      fprintf(K, "FileNumber is %lld\n", p[i].fId);
-      fprintf(K, "Reason for Reference: %s\n", p[i].cause);
-      fprintf(K, "Price: %lld\n", p[i].price);
-      fprintf(K, "Price Date: %s\n", p[i].price_Date);
-      fprintf(K, "Prescription Date: %s\n", p[i].noDate);
-      fprintf(K, "Drug: %s\n", p[i].Drug);
-      fprintf(K, "Dosage: %s\n", p[i].dosage);
+      fprintf(K, "%s\n", p[i].fName);
+      fprintf(K, "%s\n", p[i].lName);
+      fprintf(K, "%lld\n", p[i].id);
+      fprintf(K, "%lld\n", p[i].pNumber);
+      fprintf(K, "%lld\n", p[i].fId);
+      fprintf(K, "%s\n", p[i].cause);
+      fprintf(K, "%lld\n", p[i].price);
+      fprintf(K, "%s\n", p[i].price_Date);
+      fprintf(K, "%s\n", p[i].noDate);
+      fprintf(K, "%s\n", p[i].Drug);
+      fprintf(K, "%s\n", p[i].dosage);
       fprintf(K, "\n");
     }
     else if (i != z){
-      fprintf(K, "FirstName: %s\n", p[i].fName);
-      fprintf(K, "LastName: %s\n", p[i].lName);
-      fprintf(K, "ID: %lld\n", p[i].id);
-      fprintf(K, "PhoneNumber: %lld\n", p[i].pNumber);
-      fprintf(K, "FileNumber is %lld\n", p[i].fId);
-      fprintf(K, "Reason for Reference: %s\n", p[i].cause);
-      fprintf(K, "Price: %lld\n", p[i].price);
-      fprintf(K, "Price Date: %s\n", p[i].price_Date);
-      fprintf(K, "Prescription Date: %s\n", p[i].noDate);
-      fprintf(K, "Drug: %s\n", p[i].Drug);
-      fprintf(K, "Dosage: %s\n", p[i].dosage);
+      fprintf(K, "%s\n", p[i].fName);
+      fprintf(K, "%s\n", p[i].lName);
+      fprintf(K, "%lld\n", p[i].id);
+      fprintf(K, "%lld\n", p[i].pNumber);
+      fprintf(K, "%lld\n", p[i].fId);
+      fprintf(K, "%s\n", p[i].cause);
+      fprintf(K, "%lld\n", p[i].price);
+      fprintf(K, "%s\n", p[i].price_Date);
+      fprintf(K, "%s\n", p[i].noDate);
+      fprintf(K, "%s\n", p[i].Drug);
+      fprintf(K, "%s\n", p[i].dosage);
       fprintf(K, "\n");
     }
     i++;
@@ -168,31 +168,31 @@ if (c == 5) {
   while (i < v) {
     if (i == z) {
       p[z].fId = new_fId;
-      fprintf(K, "FirstName: %s\n", p[i].fName);
-      fprintf(K, "LastName: %s\n", p[i].lName);
-      fprintf(K, "ID: %lld\n", p[i].id);
-      fprintf(K, "PhoneNumber: %lld\n", p[i].pNumber);
-      fprintf(K, "FileNumber is %lld\n", p[i].fId);
-      fprintf(K, "Reason for Reference: %s\n", p[i].cause);
-      fprintf(K, "Price: %lld\n", p[i].price);
-      fprintf(K, "Price Date: %s\n", p[i].price_Date);
-      fprintf(K, "Prescription Date: %s\n", p[i].noDate);
-      fprintf(K, "Drug: %s\n", p[i].Drug);
-      fprintf(K, "Dosage: %s\n", p[i].dosage);
+      fprintf(K, "%s\n", p[i].fName);
+      fprintf(K, "%s\n", p[i].lName);
+      fprintf(K, "%lld\n", p[i].id);
+      fprintf(K, "%lld\n", p[i].pNumber);
+      fprintf(K, "%lld\n", p[i].fId);
+      fprintf(K, "%s\n", p[i].cause);
+      fprintf(K, "%lld\n", p[i].price);
+      fprintf(K, "%s\n", p[i].price_Date);
+      fprintf(K, "%s\n", p[i].noDate);
+      fprintf(K, "%s\n", p[i].Drug);
+      fprintf(K, "%s\n", p[i].dosage);
       fprintf(K, "\n");
     }
     else if (i != z){
-      fprintf(K, "FirstName: %s\n", p[i].fName);
-      fprintf(K, "LastName: %s\n", p[i].lName);
-      fprintf(K, "ID: %lld\n", p[i].id);
-      fprintf(K, "PhoneNumber: %lld\n", p[i].pNumber);
-      fprintf(K, "FileNumber is %lld\n", p[i].fId);
-      fprintf(K, "Reason for Reference: %s\n", p[i].cause);
-      fprintf(K, "Price: %lld\n", p[i].price);
-      fprintf(K, "Price Date: %s\n", p[i].price_Date);
-      fprintf(K, "Prescription Date: %s\n", p[i].noDate);
-      fprintf(K, "Drug: %s\n", p[i].Drug);
-      fprintf(K, "Dosage: %s\n", p[i].dosage);
+      fprintf(K, "%s\n", p[i].fName);
+      fprintf(K, "%s\n", p[i].lName);
+      fprintf(K, "%lld\n", p[i].id);
+      fprintf(K, "%lld\n", p[i].pNumber);
+      fprintf(K, "%lld\n", p[i].fId);
+      fprintf(K, "%s\n", p[i].cause);
+      fprintf(K, "%lld\n", p[i].price);
+      fprintf(K, "%s\n", p[i].price_Date);
+      fprintf(K, "%s\n", p[i].noDate);
+      fprintf(K, "%s\n", p[i].Drug);
+      fprintf(K, "%s\n", p[i].dosage);
       fprintf(K, "\n");
     }
     i++;
@@ -205,31 +205,31 @@ if (c == 6) {
   while (i < v) {
     if (i == z) {
       strcpy(p[z].cause, new_cause);
-      fprintf(K, "FirstName: %s\n", p[i].fName);
-      fprintf(K, "LastName: %s\n", p[i].lName);
-      fprintf(K, "ID: %lld\n", p[i].id);
-      fprintf(K, "PhoneNumber: %lld\n", p[i].pNumber);
-      fprintf(K, "FileNumber is %lld\n", p[i].fId);
-      fprintf(K, "Reason for Reference: %s\n", p[i].cause);
-      fprintf(K, "Price: %lld\n", p[i].price);
-      fprintf(K, "Price Date: %s\n", p[i].price_Date);
-      fprintf(K, "Prescription Date: %s\n", p[i].noDate);
-      fprintf(K, "Drug: %s\n", p[i].Drug);
-      fprintf(K, "Dosage: %s\n", p[i].dosage);
+      fprintf(K, "%s\n", p[i].fName);
+      fprintf(K, "%s\n", p[i].lName);
+      fprintf(K, "%lld\n", p[i].id);
+      fprintf(K, "%lld\n", p[i].pNumber);
+      fprintf(K, "%lld\n", p[i].fId);
+      fprintf(K, "%s\n", p[i].cause);
+      fprintf(K, "%lld\n", p[i].price);
+      fprintf(K, "%s\n", p[i].price_Date);
+      fprintf(K, "%s\n", p[i].noDate);
+      fprintf(K, "%s\n", p[i].Drug);
+      fprintf(K, "%s\n", p[i].dosage);
       fprintf(K, "\n");
     }
     else if (i != z){
-      fprintf(K, "FirstName: %s\n", p[i].fName);
-      fprintf(K, "LastName: %s\n", p[i].lName);
-      fprintf(K, "ID: %lld\n", p[i].id);
-      fprintf(K, "PhoneNumber: %lld\n", p[i].pNumber);
-      fprintf(K, "FileNumber is %lld\n", p[i].fId);
-      fprintf(K, "Reason for Reference: %s\n", p[i].cause);
-      fprintf(K, "Price: %lld\n", p[i].price);
-      fprintf(K, "Price Date: %s\n", p[i].price_Date);
-      fprintf(K, "Prescription Date: %s\n", p[i].noDate);
-      fprintf(K, "Drug: %s\n", p[i].Drug);
-      fprintf(K, "Dosage: %s\n", p[i].dosage);
+      fprintf(K, "%s\n", p[i].fName);
+      fprintf(K, "%s\n", p[i].lName);
+      fprintf(K, "%lld\n", p[i].id);
+      fprintf(K, "%lld\n", p[i].pNumber);
+      fprintf(K, "%lld\n", p[i].fId);
+      fprintf(K, "%s\n", p[i].cause);
+      fprintf(K, "%lld\n", p[i].price);
+      fprintf(K, "%s\n", p[i].price_Date);
+      fprintf(K, "%s\n", p[i].noDate);
+      fprintf(K, "%s\n", p[i].Drug);
+      fprintf(K, "%s\n", p[i].dosage);
       fprintf(K, "\n");
     }
     i++;
@@ -243,31 +243,31 @@ if (c == 7) {
   while (i < v) {
     if (i == z) {
       p[z].price += new_price;
-      fprintf(K, "FirstName: %s\n", p[i].fName);
-      fprintf(K, "LastName: %s\n", p[i].lName);
-      fprintf(K, "ID: %lld\n", p[i].id);
-      fprintf(K, "PhoneNumber: %lld\n", p[i].pNumber);
-      fprintf(K, "FileNumber is %lld\n", p[i].fId);
-      fprintf(K, "Reason for Reference: %s\n", p[i].cause);
-      fprintf(K, "Price: %lld\n", p[i].price);
-      fprintf(K, "Price Date: %s\n", p[i].price_Date);
-      fprintf(K, "Prescription Date: %s\n", p[i].noDate);
-      fprintf(K, "Drug: %s\n", p[i].Drug);
-      fprintf(K, "Dosage: %s\n", p[i].dosage);
+      fprintf(K, "%s\n", p[i].fName);
+      fprintf(K, "%s\n", p[i].lName);
+      fprintf(K, "%lld\n", p[i].id);
+      fprintf(K, "%lld\n", p[i].pNumber);
+      fprintf(K, "%lld\n", p[i].fId);
+      fprintf(K, "%s\n", p[i].cause);
+      fprintf(K, "%lld\n", p[i].price);
+      fprintf(K, "%s\n", p[i].price_Date);
+      fprintf(K, "%s\n", p[i].noDate);
+      fprintf(K, "%s\n", p[i].Drug);
+      fprintf(K, "%s\n", p[i].dosage);
       fprintf(K, "\n");
     }
     else if (i != z){
-      fprintf(K, "FirstName: %s\n", p[i].fName);
-      fprintf(K, "LastName: %s\n", p[i].lName);
-      fprintf(K, "ID: %lld\n", p[i].id);
-      fprintf(K, "PhoneNumber: %lld\n", p[i].pNumber);
-      fprintf(K, "FileNumber is %lld\n", p[i].fId);
-      fprintf(K, "Reason for Reference: %s\n", p[i].cause);
-      fprintf(K, "Price: %lld\n", p[i].price);
-      fprintf(K, "Price Date: %s\n", p[i].price_Date);
-      fprintf(K, "Prescription Date: %s\n", p[i].noDate);
-      fprintf(K, "Drug: %s\n", p[i].Drug);
-      fprintf(K, "Dosage: %s\n", p[i].dosage);
+      fprintf(K, "%s\n", p[i].fName);
+      fprintf(K, "%s\n", p[i].lName);
+      fprintf(K, "%lld\n", p[i].id);
+      fprintf(K, "%lld\n", p[i].pNumber);
+      fprintf(K, "%lld\n", p[i].fId);
+      fprintf(K, "%s\n", p[i].cause);
+      fprintf(K, "%lld\n", p[i].price);
+      fprintf(K, "%s\n", p[i].price_Date);
+      fprintf(K, "%s\n", p[i].noDate);
+      fprintf(K, "%s\n", p[i].Drug);
+      fprintf(K, "%s\n", p[i].dosage);
       fprintf(K, "\n");
     }
     i++;
@@ -280,31 +280,31 @@ if (c == 8) {
   while (i < v) {
     if (i == z) {
       strcpy(p[z].price_Date, new_price_Date);
-      fprintf(K, "FirstName: %s\n", p[i].fName);
-      fprintf(K, "LastName: %s\n", p[i].lName);
-      fprintf(K, "ID: %lld\n", p[i].id);
-      fprintf(K, "PhoneNumber: %lld\n", p[i].pNumber);
-      fprintf(K, "FileNumber is %lld\n", p[i].fId);
-      fprintf(K, "Reason for Reference: %s\n", p[i].cause);
-      fprintf(K, "Price: %lld\n", p[i].price);
-      fprintf(K, "Price Date: %s\n", p[i].price_Date);
-      fprintf(K, "Prescription Date: %s\n", p[i].noDate);
-      fprintf(K, "Drug: %s\n", p[i].Drug);
-      fprintf(K, "Dosage: %s\n", p[i].dosage);
+      fprintf(K, "%s\n", p[i].fName);
+      fprintf(K, "%s\n", p[i].lName);
+      fprintf(K, "%lld\n", p[i].id);
+      fprintf(K, "%lld\n", p[i].pNumber);
+      fprintf(K, "%lld\n", p[i].fId);
+      fprintf(K, "%s\n", p[i].cause);
+      fprintf(K, "%lld\n", p[i].price);
+      fprintf(K, "%s\n", p[i].price_Date);
+      fprintf(K, "%s\n", p[i].noDate);
+      fprintf(K, "%s\n", p[i].Drug);
+      fprintf(K, "%s\n", p[i].dosage);
       fprintf(K, "\n");
     }
     else if (i != z){
-      fprintf(K, "FirstName: %s\n", p[i].fName);
-      fprintf(K, "LastName: %s\n", p[i].lName);
-      fprintf(K, "ID: %lld\n", p[i].id);
-      fprintf(K, "PhoneNumber: %lld\n", p[i].pNumber);
-      fprintf(K, "FileNumber is %lld\n", p[i].fId);
-      fprintf(K, "Reason for Reference: %s\n", p[i].cause);
-      fprintf(K, "Price: %lld\n", p[i].price);
-      fprintf(K, "Price Date: %s\n", p[i].price_Date);
-      fprintf(K, "Prescription Date: %s\n", p[i].noDate);
-      fprintf(K, "Drug: %s\n", p[i].Drug);
-      fprintf(K, "Dosage: %s\n", p[i].dosage);
+      fprintf(K, "%s\n", p[i].fName);
+      fprintf(K, "%s\n", p[i].lName);
+      fprintf(K, "%lld\n", p[i].id);
+      fprintf(K, "%lld\n", p[i].pNumber);
+      fprintf(K, "%lld\n", p[i].fId);
+      fprintf(K, "%s\n", p[i].cause);
+      fprintf(K, "%lld\n", p[i].price);
+      fprintf(K, "%s\n", p[i].price_Date);
+      fprintf(K, "%s\n", p[i].noDate);
+      fprintf(K, "%s\n", p[i].Drug);
+      fprintf(K, "%s\n", p[i].dosage);
       fprintf(K, "\n");
     }
     i++;
@@ -317,31 +317,31 @@ if (c == 9) {
   while (i < v) {
     if (i == z) {
       strcpy(p[z].noDate, new_noDate);
-      fprintf(K, "FirstName: %s\n", p[i].fName);
-      fprintf(K, "LastName: %s\n", p[i].lName);
-      fprintf(K, "ID: %lld\n", p[i].id);
-      fprintf(K, "PhoneNumber: %lld\n", p[i].pNumber);
-      fprintf(K, "FileNumber is %lld\n", p[i].fId);
-      fprintf(K, "Reason for Reference: %s\n", p[i].cause);
-      fprintf(K, "Price: %lld\n", p[i].price);
-      fprintf(K, "Price Date: %s\n", p[i].price_Date);
-      fprintf(K, "Prescription Date: %s\n", p[i].noDate);
-      fprintf(K, "Drug: %s\n", p[i].Drug);
-      fprintf(K, "Dosage: %s\n", p[i].dosage);
+      fprintf(K, "%s\n", p[i].fName);
+      fprintf(K, "%s\n", p[i].lName);
+      fprintf(K, "%lld\n", p[i].id);
+      fprintf(K, "%lld\n", p[i].pNumber);
+      fprintf(K, "%lld\n", p[i].fId);
+      fprintf(K, "%s\n", p[i].cause);
+      fprintf(K, "%lld\n", p[i].price);
+      fprintf(K, "%s\n", p[i].price_Date);
+      fprintf(K, "%s\n", p[i].noDate);
+      fprintf(K, "%s\n", p[i].Drug);
+      fprintf(K, "%s\n", p[i].dosage);
       fprintf(K, "\n");
     }
     else if (i != z){
-      fprintf(K, "FirstName: %s\n", p[i].fName);
-      fprintf(K, "LastName: %s\n", p[i].lName);
-      fprintf(K, "ID: %lld\n", p[i].id);
-      fprintf(K, "PhoneNumber: %lld\n", p[i].pNumber);
-      fprintf(K, "FileNumber is %lld\n", p[i].fId);
-      fprintf(K, "Reason for Reference: %s\n", p[i].cause);
-      fprintf(K, "Price: %lld\n", p[i].price);
-      fprintf(K, "Price Date: %s\n", p[i].price_Date);
-      fprintf(K, "Prescription Date: %s\n", p[i].noDate);
-      fprintf(K, "Drug: %s\n", p[i].Drug);
-      fprintf(K, "Dosage: %s\n", p[i].dosage);
+      fprintf(K, "%s\n", p[i].fName);
+      fprintf(K, "%s\n", p[i].lName);
+      fprintf(K, "%lld\n", p[i].id);
+      fprintf(K, "%lld\n", p[i].pNumber);
+      fprintf(K, "%lld\n", p[i].fId);
+      fprintf(K, "%s\n", p[i].cause);
+      fprintf(K, "%lld\n", p[i].price);
+      fprintf(K, "%s\n", p[i].price_Date);
+      fprintf(K, "%s\n", p[i].noDate);
+      fprintf(K, "%s\n", p[i].Drug);
+      fprintf(K, "%s\n", p[i].dosage);
       fprintf(K, "\n");
     }
     i++;
@@ -354,31 +354,31 @@ if (c == 10) {
   while (i < v) {
     if (i == z) {
       strcpy(p[z].Drug, new_Drug);
-      fprintf(K, "FirstName: %s\n", p[i].fName);
-      fprintf(K, "LastName: %s\n", p[i].lName);
-      fprintf(K, "ID: %lld\n", p[i].id);
-      fprintf(K, "PhoneNumber: %lld\n", p[i].pNumber);
-      fprintf(K, "FileNumber is %lld\n", p[i].fId);
-      fprintf(K, "Reason for Reference: %s\n", p[i].cause);
-      fprintf(K, "Price: %lld\n", p[i].price);
-      fprintf(K, "Price Date: %s\n", p[i].price_Date);
-      fprintf(K, "Prescription Date: %s\n", p[i].noDate);
-      fprintf(K, "Drug: %s\n", p[i].Drug);
-      fprintf(K, "Dosage: %s\n", p[i].dosage);
+      fprintf(K, "%s\n", p[i].fName);
+      fprintf(K, "%s\n", p[i].lName);
+      fprintf(K, "%lld\n", p[i].id);
+      fprintf(K, "%lld\n", p[i].pNumber);
+      fprintf(K, "%lld\n", p[i].fId);
+      fprintf(K, "%s\n", p[i].cause);
+      fprintf(K, "%lld\n", p[i].price);
+      fprintf(K, "%s\n", p[i].price_Date);
+      fprintf(K, "%s\n", p[i].noDate);
+      fprintf(K, "%s\n", p[i].Drug);
+      fprintf(K, "%s\n", p[i].dosage);
       fprintf(K, "\n");
     }
     else if (i != z){
-      fprintf(K, "FirstName: %s\n", p[i].fName);
-      fprintf(K, "LastName: %s\n", p[i].lName);
-      fprintf(K, "ID: %lld\n", p[i].id);
-      fprintf(K, "PhoneNumber: %lld\n", p[i].pNumber);
-      fprintf(K, "FileNumber is %lld\n", p[i].fId);
-      fprintf(K, "Reason for Reference: %s\n", p[i].cause);
-      fprintf(K, "Price: %lld\n", p[i].price);
-      fprintf(K, "Price Date: %s\n", p[i].price_Date);
-      fprintf(K, "Prescription Date: %s\n", p[i].noDate);
-      fprintf(K, "Drug: %s\n", p[i].Drug);
-      fprintf(K, "Dosage: %s\n", p[i].dosage);
+      fprintf(K, "%s\n", p[i].fName);
+      fprintf(K, "%s\n", p[i].lName);
+      fprintf(K, "%lld\n", p[i].id);
+      fprintf(K, "%lld\n", p[i].pNumber);
+      fprintf(K, "%lld\n", p[i].fId);
+      fprintf(K, "%s\n", p[i].cause);
+      fprintf(K, "%lld\n", p[i].price);
+      fprintf(K, "%s\n", p[i].price_Date);
+      fprintf(K, "%s\n", p[i].noDate);
+      fprintf(K, "%s\n", p[i].Drug);
+      fprintf(K, "%s\n", p[i].dosage);
       fprintf(K, "\n");
     }
     i++;
@@ -391,31 +391,31 @@ if (c == 11) {
   while (i < v) {
     if (i == z) {
       strcpy(p[z].dosage, new_Dosage);
-      fprintf(K, "FirstName: %s\n", p[i].fName);
-      fprintf(K, "LastName: %s\n", p[i].lName);
-      fprintf(K, "ID: %lld\n", p[i].id);
-      fprintf(K, "PhoneNumber: %lld\n", p[i].pNumber);
-      fprintf(K, "FileNumber is %lld\n", p[i].fId);
-      fprintf(K, "Reason for Reference: %s\n", p[i].cause);
-      fprintf(K, "Price: %lld\n", p[i].price);
-      fprintf(K, "Price Date: %s\n", p[i].price_Date);
-      fprintf(K, "Prescription Date: %s\n", p[i].noDate);
-      fprintf(K, "Drug: %s\n", p[i].Drug);
-      fprintf(K, "Dosage: %s\n", p[i].dosage);
+      fprintf(K, "%s\n", p[i].fName);
+      fprintf(K, "%s\n", p[i].lName);
+      fprintf(K, "%lld\n", p[i].id);
+      fprintf(K, "%lld\n", p[i].pNumber);
+      fprintf(K, "%lld\n", p[i].fId);
+      fprintf(K, "%s\n", p[i].cause);
+      fprintf(K, "%lld\n", p[i].price);
+      fprintf(K, "%s\n", p[i].price_Date);
+      fprintf(K, "%s\n", p[i].noDate);
+      fprintf(K, "%s\n", p[i].Drug);
+      fprintf(K, "%s\n", p[i].dosage);
       fprintf(K, "\n");
     }
     else if (i != z){
-      fprintf(K, "FirstName: %s\n", p[i].fName);
-      fprintf(K, "LastName: %s\n", p[i].lName);
-      fprintf(K, "ID: %lld\n", p[i].id);
-      fprintf(K, "PhoneNumber: %lld\n", p[i].pNumber);
-      fprintf(K, "FileNumber is %lld\n", p[i].fId);
-      fprintf(K, "Reason for Reference: %s\n", p[i].cause);
-      fprintf(K, "Price: %lld\n", p[i].price);
-      fprintf(K, "Price Date: %s\n", p[i].price_Date);
-      fprintf(K, "Prescription Date: %s\n", p[i].noDate);
-      fprintf(K, "Drug: %s\n", p[i].Drug);
-      fprintf(K, "Dosage: %s\n", p[i].dosage);
+      fprintf(K, "%s\n", p[i].fName);
+      fprintf(K, "%s\n", p[i].lName);
+      fprintf(K, "%lld\n", p[i].id);
+      fprintf(K, "%lld\n", p[i].pNumber);
+      fprintf(K, "%lld\n", p[i].fId);
+      fprintf(K, "%s\n", p[i].cause);
+      fprintf(K, "%lld\n", p[i].price);
+      fprintf(K, "%s\n", p[i].price_Date);
+      fprintf(K, "%s\n", p[i].noDate);
+      fprintf(K, "%s\n", p[i].Drug);
+      fprintf(K, "%s\n", p[i].dosage);
       fprintf(K, "\n");
     }
     i++;
